@@ -9,6 +9,7 @@ Proof of concept for [Austex](http://austex.com) built using GtasbyJS and React 
 - [React Bootstrap with Material Design](https://mdbootstrap.com/react/) css framework.
 - Fully responsive
 - [React Responsive Carousel](https://github.com/leandrowd/react-responsive-carousel)
+- [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 
 ## Usage
 
