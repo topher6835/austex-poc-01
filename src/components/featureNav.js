@@ -1,15 +1,17 @@
 import React from "react";
-import { Link } from "gatsby"
-import { MDBRow, MDBCol, MDBContainer, MDBView, MDBMask } from "mdbreact";
+import { Link } from "gatsby";
+import { MDBRow, MDBCol, MDBContainer } from "mdbreact";
 
-import icon01 from "../images/icons/icon01.png"
-import icon02 from "../images/icons/icon02.png"
-import icon03 from "../images/icons/icon03.png"
-import icon04 from "../images/icons/icon04.png"
-import icon05 from "../images/icons/icon05.png"
-import icon06 from "../images/icons/icon06.png"
+import "../style/featureNav.css";
+
+import icon01 from "../images/icons/icon01.png";
+import icon02 from "../images/icons/icon02.png";
+import icon03 from "../images/icons/icon03.png";
+import icon04 from "../images/icons/icon04.png";
+import icon05 from "../images/icons/icon05.png";
+import icon06 from "../images/icons/icon06.png";
 import icon07 from "../images/icons/icon07.png"
-import quickTour from "../images/quick-tour.png"
+import quickTour from "../images/quick-tour.png";
 
 const FeaturesNav = () => {
     return (

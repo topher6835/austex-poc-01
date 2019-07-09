@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Carousel4 from '../components/carousel4';
-import FeatureNav from '../components/featureNav'
-import FeaturesSection from '../components/featuresSection1'
-import FeaturesSection2 from '../components/featuresSection2'
-import { MDBContainer } from 'mdbreact'
+import FeatureNav from '../components/featureNav';
+import FeaturesSection2 from '../components/featuresSection2';
+import { MDBContainer } from 'mdbreact';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -143,12 +142,6 @@ class App extends Component {
                   fabulas ullamcorper vel. Congue aperiam evertitur eum ex,
                   alterum minimum nominati ei vel. Ei qui habeo congue aliquip,
                   sint virtute scriptorem est an.
-                </p>
-                <p>
-                  Ne adhuc elitr fuisset vim, vocent regione quo in, eos brute
-                  accusamus patrioque ei. Pro eu mundi aliquip probatus. Modo
-                  vocent epicurei cum te. Duo an malis oratio vocent. Ex possim
-                  apeirian euripidis vim.
                 </p>
               </MDBContainer>
 

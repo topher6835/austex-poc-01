@@ -1,13 +1,10 @@
 import React, { Component, Fragment  } from 'react';
-// import { MDBIcon } from "mdbreact";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBBtn } from "mdbreact";
 
 import "../style/header.css"
-// import headerStyles from "../style/header.css"
 import logo from '../images/Header-Logo-04.png';
 import logoSmall from '../images/logos/logo-small.png';
-// import headerStyles from './header.module.css';
 
 class Header extends Component {
     state = {
@@ -97,7 +94,7 @@ class Header extends Component {
                 <MDBNavbarBrand>
                 <img
                   className="header-main-logo-img"
-                  src={logo}
+                  src={logoSmall}
                   alt="logo"
                 />
                 </MDBNavbarBrand>

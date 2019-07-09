@@ -1,14 +1,13 @@
 import React from "react";
-import { Link } from "gatsby"
-import Img from "gatsby-image"
+import { Link } from "gatsby";
 import { MDBRow, MDBCol } from "mdbreact";
 import { Carousel } from "react-responsive-carousel";
 
-import "../style/carousel.css"
-import image01 from "../images/carousel_image size_fpo.png"
-import image02 from "../images/cats-q-c-640-480-1.jpg"
-import image03 from "../images/carousel/Mailing_banner.png"
-import image04 from "../images/carousel/Offset_banner.png"
+import "../style/carousel.css";
+import image01 from "../images/carousel_image size_fpo.png";
+import image02 from "../images/cats-q-c-640-480-1.jpg";
+import image03 from "../images/carousel/Mailing_banner.png";
+import image04 from "../images/carousel/Offset_banner.png";
 
 const CarouselPage3 = () => (
   <Carousel autoPlay showThumbs={false} infiniteLoop={true} interval={5000} showStatus={false} swipeScrollTolerance={1} emulateTouch={true}>

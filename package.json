@@ -1,9 +1,9 @@
 {
   "name": "gatsby-material-design-for-bootstrap",
   "private": true,
-  "description": "A simple starter which lets you quickly start developing with Gastby and Material Design For Bootstrap",
+  "description": "Gastby and Material Design For Bootstrap starter",
   "version": "0.1.0",
-  "author": "Anna Morawska <a.morawska@mdbootstrap.com>",
+  "author": "",
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
     "gatsby": "^2.0.76",

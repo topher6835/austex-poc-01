@@ -1,7 +1,7 @@
-import React from 'react'
-import { MDBRow, MDBCol } from 'mdbreact'
+import React from 'react';
+import { MDBRow, MDBCol } from 'mdbreact';
 
-import "../style/feature.css"
+import "../style/feature.css";
 
 const Feature = (props) => {
   return (
@@ -22,7 +22,7 @@ const Feature = (props) => {
                 />
               </div>
               <div className="feature-bar-title">
-                <span className="feature-bar-titlex"><h2>{props.title}</h2></span>
+                <h2 className="feature-bar-title-text">{props.title}</h2>
               </div>
             </MDBCol>
 
