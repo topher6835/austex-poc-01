@@ -81,7 +81,7 @@ class Header extends Component {
                 </div>
                 <div className="quick-tour-nav">
                   <Fragment>
-                    <MDBBtn className="quick-tour-nav-button" style={{backgroundColor: "#203E7C !important"}}>
+                    <MDBBtn className="quick-tour-nav-button z-depth-0" style={{backgroundColor: "#203E7C !important"}}>
                       <div className="quick-tour-nav-button-text">Quick Tour &nbsp; <MDBIcon icon="video" className="ml-1" /></div>
                     </MDBBtn>
                   </Fragment>
@@ -101,8 +101,8 @@ class Header extends Component {
                     <MDBNavbarNav left>
                         <MDBNavItem>
                             <MDBDropdown>
-                                <MDBDropdownToggle className="mobile-nav-item" nav caret>
-                                    <span className="mr-2 black-text">Menu</span>
+                                <MDBDropdownToggle className="mobile-nav-item" nav>
+                                    <span className="mr-2 black-text">Menu </span> <MDBIcon icon="bars" />
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu style={{backgroundColor: '#1F3F7C'}}>
                                     <MDBDropdownItem className="white-text" href="#!">Capabilties</MDBDropdownItem>
@@ -117,6 +117,7 @@ class Header extends Component {
                             </MDBDropdown>
                         </MDBNavItem>
                     </MDBNavbarNav>
+                    
                     <MDBNavbarNav right>
                         <MDBNavItem className="mobile-nav-item">
                             <span className="mr-2 black-text">512.476.7581</span>

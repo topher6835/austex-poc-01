@@ -34,7 +34,7 @@ class App extends Component {
           <main>
             <FeatureNav />
             <FeaturesSection2 />
-            <section style={{backgroundColor: '#ffffff'}} id="cardSection">
+            {/* <section style={{backgroundColor: '#ffffff'}} id="cardSection">
               <MDBContainer className="text-center">
                 <h2>Lorem ipsum</h2>
 
@@ -145,7 +145,7 @@ class App extends Component {
                 </p>
               </MDBContainer>
 
-            </section>
+            </section> */}
           </main>
         </Layout>
       </>

@@ -4,14 +4,15 @@ import { MDBRow, MDBCol } from 'mdbreact';
 import "../style/feature.css";
 
 const Feature = (props) => {
+
   return (
     <div className="feature">
-      <MDBRow className="my-5" id={props.id}> {/* id="feature1" */}
+      <MDBRow className="my-5" id={props.id}>
         <MDBCol size="12">
 
           <MDBRow className="feature-banner-row">
             <MDBCol
-              className="d-none d-md-block feature-banner-bar-desktop z-depth-1-half"
+              className="d-none d-md-block feature-banner-bar-desktop"  //z-depth-1-half
               md="7"
             >
               <div className="feature-bar-img z-depth-1-half">
@@ -27,10 +28,10 @@ const Feature = (props) => {
             </MDBCol>
 
             <MDBCol
-              className="d-block d-md-none feature-banner-bar-mobile z-depth-1-half"
+              className="d-block d-md-none feature-banner-bar-mobile"
               md="5"
             >
-              <h3 style={{ lineHeight: '45px', fontWeight: '500', textAlign: 'center' }}>
+              <h3 className="feature-bar-title-text-mobile">
                 {props.title}
               </h3>
             </MDBCol>

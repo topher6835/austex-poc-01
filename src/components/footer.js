@@ -4,7 +4,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBIcon } from "mdbreact";
 const Footer = () => {
     return (
         <MDBFooter className="font-small pt-0">
-            <MDBContainer>
+            {/* <MDBContainer>
                 <MDBRow className="pt-5 mb-3 text-center d-flex justify-content-center">
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
@@ -58,7 +58,7 @@ const Footer = () => {
                         </div>
                     </MDBCol>
                 </MDBRow>
-            </MDBContainer>
+            </MDBContainer> */}
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
                     &copy; {new Date().getFullYear()} Copyright
