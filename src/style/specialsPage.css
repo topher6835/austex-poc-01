@@ -23,6 +23,7 @@
   max-width: 275px;
 }
 .left-custom-quote-button {
+  background-color: #ea1d2e !important;
   width: 100%;
   font-size: 1.6rem;
   padding: 0.4rem 1.2rem;

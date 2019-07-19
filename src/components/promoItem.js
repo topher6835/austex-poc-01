@@ -40,14 +40,14 @@ const PromoItem = (props) => {
                 <table className="promo-catalog-image-wrapper">
                     <tr>
                         <td>
-                            <img src={props.promoPriceChart}  /> {/* style={{minWidth: '350px'}} */}
+                            <img src={props.promoPriceChart}  />
                             <br />
                             *prices shown are per piece
                         </td>
                     </tr>
                     
-                    <tr >
-                        <MDBBtn className="browse-catalog-button text-capitalize" style={{backgroundColor: '#ea1d2e !important'}}>Browse Catalog</MDBBtn>
+                    <tr>
+                        <MDBBtn href="https://austex.logomall.com/" className="browse-catalog-button text-capitalize" style={{backgroundColor: '#ea1d2e !important'}}>Browse Catalog</MDBBtn>
                     </tr>
                 </table>
                 

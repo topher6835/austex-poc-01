@@ -11,7 +11,6 @@ import icon04 from "../images/icons/icon04.png";
 import icon05 from "../images/icons/icon05.png";
 import icon06 from "../images/icons/icon06.png";
 import icon07 from "../images/icons/icon07.png"
-import quickTour from "../images/quick-tour.png";
 
 const FeaturesNav = () => {
     return (

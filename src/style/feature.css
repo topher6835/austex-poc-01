@@ -72,6 +72,11 @@
     font-size: 1.9rem;
   }
 }
+@media screen and (min-width: 18rem) {
+  .feature-bar-title-text-mobile {
+    font-size: calc(1.0rem + (1.4 - 1.0) * ((100vw - 18rem) / (29.8125 - 18)));
+  }
+}
 
 .feature-bar-title-text-mobile {
   line-height: 45px; 

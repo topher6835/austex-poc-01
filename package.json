@@ -1,7 +1,7 @@
 {
   "name": "gatsby-material-design-for-bootstrap",
   "private": true,
-  "description": "Gastby and Material Design For Bootstrap starter",
+  "description": "Austex demo",
   "version": "0.1.0",
   "author": "",
   "dependencies": {
@@ -24,9 +24,8 @@
     "smooth-scroll": "^16.1.0"
   },
   "keywords": [
+    "Austex",
     "gatsby",
-    "material-design",
-    "material-design-for-bootstrap",
     "MDB",
     "MDB React"
   ],

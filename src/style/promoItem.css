@@ -79,8 +79,9 @@ td {
 }
 
 .browse-catalog-button {
-  width: 100%;
-  max-width: 390px;
+  background-color: #ea1d2e !important;
+  width: 335px;
+  /* max-width: 390px; */
   font-size: 1.1rem;
   padding: 0.6rem 1.2rem;
   border-radius: 50px;

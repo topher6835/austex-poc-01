@@ -11,7 +11,7 @@ header {
   float: left;
 }
 .header-main-logo-img {
-  height: 78px;
+  height: 90px; /* 78 */
 }
 .upper-bar-list {
   list-style-type: none;
@@ -56,6 +56,7 @@ header {
 .nav-item {
   font-size: 0.7rem;
   margin-right: 1.1rem;
+  color: #000000;
   text-decoration: none;
   float: left;
 }
@@ -82,9 +83,22 @@ header {
 }
 .mobile-header,
 .mobile-nav-item {
+  /* margin-right: 0px; */
   margin-bottom: 0px;
   font-size: 1rem;
   color: #000000;
+}
+.mobile-dropdown-menu a {
+  padding: 0 !important;
+}
+.mobile-drop-item {
+  font-weight: 300;
+  height: 44px;
+}
+@media screen and (max-width: 356px) {
+  .mobile-nav-item {
+    margin-right: -20px;
+  }
 }
 
 .quick-tour-nav-button {

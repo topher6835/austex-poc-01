@@ -1,6 +1,5 @@
 import React from 'react';
 import { MDBIcon } from "mdbreact";
-import logo from '../images/Header-Logo-04.png';
 import logoSmall from '../images/logos/logo-small.png';
 import headerStyles from './header.module.css';
 

@@ -1,9 +1,9 @@
 import React, { Component, Fragment  } from 'react';
+import { Link } from "gatsby";
 import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBBtn } from "mdbreact";
 
-import "../style/header.css"
-import logo from '../images/Header-Logo-04.png';
+import "../style/header.css";
 import logoSmall from '../images/logos/logo-small.png';
 
 class Header extends Component {
@@ -20,11 +20,13 @@ class Header extends Component {
           <div>
             <header className="desktop-header">
               <div className="header-main-logo">
-                <img
-                  className="header-main-logo-img"
-                  src={logoSmall}
-                  alt="logo"
-                />
+                <Link to="/">
+                  <img
+                    className="header-main-logo-img"
+                    src={logoSmall}
+                    alt="logo"
+                  />
+                </Link>
               </div>
 
               <div className="upper-bar">
@@ -35,26 +37,34 @@ class Header extends Component {
                       roof.
                     </li>
                     <li className="upper-bar-right-links">
-                      <span
-                        style={{
-                          borderBottom: '.14rem solid #ffffff',
-                          padding: '.1rem',
-                          fontWeight: '500',
-                        }}
-                      >
-                        UPLOAD <MDBIcon icon="file-upload" />
-                      </span>
+                      <a href="http://austex.com/file-transfer/">
+                        <span
+                          style={{
+                            color: '#ffffff',
+                            textDecoration: 'none',
+                            borderBottom: '.14rem solid #ffffff',
+                            padding: '.1rem',
+                            fontWeight: '500',
+                          }}
+                        >
+                          UPLOAD <MDBIcon icon="file-upload" />
+                        </span>
+                      </a>
                     </li>
                     <li className="upper-bar-right-links">
-                      <span
-                        style={{
-                          borderBottom: '.14rem solid #ffffff',
-                          padding: '.1rem',
-                          fontWeight: '500',
-                        }}
-                      >
-                        GET A QUOTE
-                      </span>
+                      <a href="http://austex.com/request-a-custom-quote/">
+                        <span
+                          style={{
+                            color: '#ffffff',
+                            textDecoration: 'none',
+                            borderBottom: '.14rem solid #ffffff',
+                            padding: '.1rem',
+                            fontWeight: '500',
+                          }}
+                        >
+                          GET A QUOTE
+                        </span>
+                      </a>
                     </li>
                   </ul>
                 </nav>
@@ -75,7 +85,7 @@ class Header extends Component {
                     <li className="nav-item">Equipment</li>
                     <li className="nav-item">Gallery</li>
                     <li className="nav-item">Customer Comments</li>
-                    <li className="nav-item">Specials</li>
+                    <Link to="/specials"><li className="nav-item">Specials</li></Link>
                   </ul>
                 </nav>
                 </div>
@@ -92,34 +102,36 @@ class Header extends Component {
             <header className="mobile-header">
               <MDBNavbar style={{backgroundColor: '#ffffff'}}  expand="md" >
                 <MDBNavbarBrand>
-                <img
-                  className="header-main-logo-img"
-                  src={logoSmall}
-                  alt="logo"
-                />
+                  <Link to="/">
+                    <img
+                      className="header-main-logo-img"
+                      src={logoSmall}
+                      alt="logo"
+                    />
+                  </Link>
                 </MDBNavbarBrand>
                     <MDBNavbarNav left>
                         <MDBNavItem>
                             <MDBDropdown>
                                 <MDBDropdownToggle className="mobile-nav-item" nav>
-                                    <span className="mr-2 black-text">Menu </span> <MDBIcon icon="bars" />
+                                    <span className="mr-2 black-text" style={{marginRight: '0'}}>Menu</span> <MDBIcon icon="bars"/>
                                 </MDBDropdownToggle>
-                                <MDBDropdownMenu style={{backgroundColor: '#1F3F7C'}}>
-                                    <MDBDropdownItem className="white-text" href="#!">Capabilties</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Equipment</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Gallery</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Customer Comments</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Specials</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Email</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Directions</MDBDropdownItem>
-                                    <MDBDropdownItem className="white-text" href="#!">Get A Quote</MDBDropdownItem>
+                                <MDBDropdownMenu className="mobile-dropdown-menu" style={{backgroundColor: '#1F3F7C'}}>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Capabilties</MDBDropdownItem></Link>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Equipment</MDBDropdownItem></Link>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Gallery</MDBDropdownItem></Link>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Customer Comments</MDBDropdownItem></Link>
+                                  <Link to="/specials"><MDBDropdownItem className="white-text mobile-drop-item">Specials</MDBDropdownItem></Link>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Email</MDBDropdownItem></Link>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Directions</MDBDropdownItem></Link>
+                                  <a href="http://austex.com/request-a-custom-quote/"><MDBDropdownItem className="white-text mobile-drop-item">Get A Quote</MDBDropdownItem></a>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavItem>
                     </MDBNavbarNav>
                     
                     <MDBNavbarNav right>
-                        <MDBNavItem className="mobile-nav-item">
+                        <MDBNavItem className="mobile-nav-item mobile-phone">
                             <span className="mr-2 black-text">512.476.7581</span>
                         </MDBNavItem>
                     </MDBNavbarNav>
