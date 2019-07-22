@@ -52,7 +52,8 @@ class Header extends Component {
                       </a>
                     </li>
                     <li className="upper-bar-right-links">
-                      <a href="http://austex.com/request-a-custom-quote/">
+                      {/* <a href="http://austex.com/request-a-custom-quote/"> */}
+                      <Link to="/request-a-custom-quote">
                         <span
                           style={{
                             color: '#ffffff',
@@ -64,7 +65,8 @@ class Header extends Component {
                         >
                           GET A QUOTE
                         </span>
-                      </a>
+                      </Link>
+                      {/* </a> */}
                     </li>
                   </ul>
                 </nav>
@@ -124,7 +126,11 @@ class Header extends Component {
                                   <Link to="/specials"><MDBDropdownItem className="white-text mobile-drop-item">Specials</MDBDropdownItem></Link>
                                   <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Email</MDBDropdownItem></Link>
                                   <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Directions</MDBDropdownItem></Link>
-                                  <a href="http://austex.com/request-a-custom-quote/"><MDBDropdownItem className="white-text mobile-drop-item">Get A Quote</MDBDropdownItem></a>
+                                  {/* <a href="http://austex.com/request-a-custom-quote/"> */}
+                                  <Link to="/request-a-custom-quote">
+                                    <MDBDropdownItem className="white-text mobile-drop-item">Get A Quote</MDBDropdownItem>
+                                  </Link>
+                                  {/* </a> */}
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavItem>

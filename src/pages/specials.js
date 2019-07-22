@@ -72,15 +72,3 @@ const SpecialsPage = () => {
 }
 
 export default SpecialsPage;
-
-
-{/* <MDBCol
-                    style={{ backgroundColor: 'blue', color: '#ffffff', width: '250px' }}
-                >
-                    <h2>test1</h2>
-                </MDBCol>
-                <MDBCol
-                    style={{ backgroundColor: 'red', color: '#ffffff', width: '550px' }}
-                >
-                    <h2>test2</h2>
-                </MDBCol> */}

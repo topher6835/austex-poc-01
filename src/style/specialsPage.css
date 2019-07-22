@@ -1,23 +1,22 @@
 @media screen and (min-width: 738px) {
-    .specials-main-row {
-      min-width: 1104px;
-    }
+  .specials-main-row {
+    min-width: 1104px;
   }
-
+}
 .specials-main-row {
   padding: 0 40px;
 }
 .specials-page-headline-bar {
-    width: 100%;
+  width: 100%;
   height: 55px;
   background-color: #1f3f7c;
   color: white;
 }
 .specials-page-headline-bar h2 {
-    line-height: 55px;
-    font-size: 2rem;
-    font-weight: 400;
-  }
+  line-height: 55px;
+  font-size: 2rem;
+  font-weight: 400;
+}
 
 .left-custom-quote {
   max-width: 275px;
@@ -31,5 +30,4 @@
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   margin-left: 0;
-  /* background-color: #ea1d2e !important; */
 }
