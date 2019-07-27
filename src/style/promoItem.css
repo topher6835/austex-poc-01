@@ -15,10 +15,10 @@
 }
 .promo-headline {
   margin-left: 20px;
-  float: left;
+  /* float: left; */
 }
 .promo-headline-month {
-  float: right;
+  /* float: right; */
   margin-right: 20px;
 }
 
@@ -57,6 +57,11 @@
 /* /1st Column*/
 
 /* 3rd Column*/
+.promo-catalog-col {
+  min-width: ;  /* 350px */
+  margin-left: 0px;
+  padding: 0px;
+}
 .promo-catalog-image {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -68,9 +73,9 @@
 }
 .promo-catalog-image img {
   height: auto;
-  max-height: 350px;
+  max-height: 450px;
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
 }
 .promo-catalog-image-wrapper tr,
 td {
@@ -80,8 +85,8 @@ td {
 
 .browse-catalog-button {
   background-color: #ea1d2e !important;
-  width: 335px;
-  /* max-width: 390px; */
+  width: 325px;
+  max-width: 390px;
   font-size: 1.1rem;
   padding: 0.6rem 1.2rem;
   border-radius: 50px;

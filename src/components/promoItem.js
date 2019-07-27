@@ -6,12 +6,31 @@ import "../style/promoItem.css";
 const PromoItem = (props) => {
     return (
       <div className="promo-item">
-        <MDBRow>
-          <div className="specials-page-headline-bar">
-            <h2 className="promo-headline">Promotional Item of the Month!</h2>
-            <h2 className="promo-headline-month">Month</h2>
-          </div>
+        <MDBRow className="d-none d-md-block">
+          <MDBCol md="12">
+
+            <div className="specials-page-headline-bar"> {/*  */}
+              <MDBRow>
+                <MDBCol md="10">
+                  <h2 className="promo-headline ">Promotional Item of the Month!</h2>  {/* promo-headline responsive-title-bar-text*/}
+                </MDBCol>
+                <MDBCol md="2">
+                  <h2 className="">Month</h2> {/* promo-headline-month responsive-title-bar-text*/}
+                </MDBCol>
+              </MDBRow>
+            </div>
+
+          </MDBCol>
         </MDBRow>
+        <MDBRow className="d-block d-md-none">
+          <MDBCol md="12">
+            <div className="specials-page-headline-bar">
+              <h2 className="promo-headline responsive-title-bar-text-mobile">Promotional Item of the Month!</h2>
+              {/* <h2 className="promo-headline-month responsive-title-bar-text-mobile">Month</h2> */}
+            </div>
+          </MDBCol>
+        </MDBRow>
+
         <MDBRow className="promo-content-row">
           <MDBCol className="promo-img-col" md="3">
             <div className="promo-img">
@@ -34,13 +53,13 @@ const PromoItem = (props) => {
               </p>
             </MDBRow>
           </MDBCol>
-          <MDBCol className="promo-catalog-col" style={{minWidth: '350px'}}>
+          <MDBCol className="promo-catalog-col"> 
             <div className="promo-catalog-image" >
                 
-                <table className="promo-catalog-image-wrapper">
+                <table className="promo-catalog-image-wrapper" >
                     <tr>
                         <td>
-                            <img src={props.promoPriceChart}  />
+                            <img src={props.promoPriceChart} style={{}}/>
                             <br />
                             *prices shown are per piece
                         </td>

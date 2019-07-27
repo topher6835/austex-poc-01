@@ -6,38 +6,31 @@ import { MDBRow, MDBCol } from 'mdbreact';
 import Layout from '../components/layout';
 import GridGallery from '../components/gridGallery';
 import Comments from '../components/comments';
+import Equipment from '../components/equipmentList';
 //import GalleryImg from "../components/galleryImg";
 import "../style/gallery.css";
 
 const GalleryPage = () => {
   return (
-    <>
       <Layout>
         <MDBRow className="my-5 gallery-main-row">
           <MDBCol size="12">
             <MDBRow>
               <MDBCol className="left-comments-column" md="3" style={{backgroundColor: '#203e7c', color: 'white'}}>
                 <MDBRow>
-                        <MDBCol>
-                            <Comments />
-                        </MDBCol>
-                    </MDBRow>
-                </MDBCol>
+                    <MDBCol>
+                        <Comments />
+                    </MDBCol>
+                </MDBRow>
+              </MDBCol>
               <MDBCol md="9">
-                <h3>Equipment list here.</h3>
-                <ul>
-                    <li>Equipment 1</li>
-                    <li>Equipment 2</li>
-                    <li>Equipment 3</li>
-                    <li>etc</li>
-                </ul>
+                <Equipment />
                 <GridGallery />
               </MDBCol>
             </MDBRow>
           </MDBCol>
         </MDBRow>
       </Layout>
-    </>
   )
 }
 export default GalleryPage

@@ -15,7 +15,7 @@ const Feature = (props) => {
               className="d-none d-md-block feature-banner-bar-desktop"  //z-depth-1-half
               md="7"
             >
-              <div className="feature-bar-img">
+              <div className="feature-bar-img z-depth-1-half">
                 <img
                   src={props.icon}
                   alt=""

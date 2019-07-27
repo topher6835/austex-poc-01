@@ -11,18 +11,6 @@ const SpecialsLeftNav = props => {
           return <li>{item}</li>
         })}
       </ul>
-      {/* <ul className="left-nav-list">
-        <li>Promotional Items</li>
-        <li>Turnkey Postcards</li>
-        <li>Window Envelopes</li>
-        <li>Museum &amp; Gallery Cards</li>
-        <li>Pet Remembrance Cards</li>
-        <li>Window Envelopes</li>
-        <li>Window Envelopes</li>
-        <li>Window Envelopes</li>
-        <li>Window Envelopes</li>
-        <li>Window Envelopes</li>
-      </ul> */}
     </div>
   )
 }

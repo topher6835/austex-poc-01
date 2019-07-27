@@ -6,12 +6,29 @@ import "../style/specialsItem.css";
 const SpecialsItem = (props) => {
     return (
         <div className="specials-item">
-            <MDBRow>
+            <MDBRow className="d-none d-md-block"> {/* DESKTOP */}
+                <MDBCol md="12">
+                    <div className="specials-page-headline-bar">
+                        <MDBRow>
+                            <MDBCol md="7">
+                                <h2 className="promo-headline">{props.specialsItemHeadline}</h2>
+                            </MDBCol>
+                            <MDBCol md="5">
+                                <h2>Design, Print, Mail</h2> {/* className="promo-headline-month" */}
+                            </MDBCol>
+                        </MDBRow>
+                    </div>
+                </MDBCol>
+            </MDBRow>
+
+            <MDBRow className="d-block d-md-none">  {/* MOBILE */}
                 <div className="specials-page-headline-bar">
-                    <h2 className="promo-headline">{props.specialsItemHeadline}</h2>
-                    <h2 className="promo-headline-month">Design, Print, Mail</h2>
+                    <h2 className="promo-headline responsive-title-bar-text-mobile">{props.specialsItemHeadline}</h2>
+                    {/* <h2 className="promo-headline-month">Design, Print, Mail</h2> */}
                 </div>
             </MDBRow>
+
+
             <MDBRow className="specials-item-content-row">
                 <MDBCol className="specials-item-img-col" md="5">
                     <div className="specials-item-img">

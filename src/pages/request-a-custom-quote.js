@@ -38,16 +38,16 @@ class CustomQuote extends Component {
         <MDBContainer>
           <MDBRow><h2>Request a Custom Quote</h2></MDBRow>
           <MDBRow>
-            {/* <form onSubmit={this.handleSubmit} action="http://topherfoosite.com" method="POST"> */}
-            <form name="get-quote" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+            <form name="get-quote" method="POST">
+            {/* <form name="get-quote" method="POST" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="get-quote" />
+              <input type="hidden" name="form-name" value="get-quote" /> */}
               <div className="quote-form-basic-info-section">
                 <MDBRow>
                   <MDBCol md="4">
                     <label htmlFor="defaultFormContactNameEx" className="grey-text">
                       First Name
-                      <span class="frm_required"> *</span>
+                      <span className="frm_required"> *</span>
                     </label>
                     <input
                       type="text"
@@ -59,7 +59,7 @@ class CustomQuote extends Component {
                   <MDBCol md="4">
                     <label htmlFor="defaultFormContactNameEx" className="grey-text">
                       Last Name
-                      <span class="frm_required"> *</span>
+                      <span className="frm_required"> *</span>
                     </label>
                     <input
                       type="text"
@@ -254,7 +254,7 @@ class CustomQuote extends Component {
                     </MDBCol>
                     <MDBCol md="3">
                         <label for="" className="grey-text">Do you require perforations?
-                            <span class="frm_required"></span>
+                            <span className="frm_required"></span>
                         </label>
                         <select className="browser-default custom-select" name="perforations" id="" data-placeholder="Select an option">
                             <option value=""  selected="selected" className="">

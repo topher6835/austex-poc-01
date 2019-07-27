@@ -43,7 +43,7 @@ const SpecialsPage = () => {
                 <MDBCol size="12">
                     <MDBRow>
                         <MDBCol className="left-nav-column" md="3">
-                            <MDBRow>
+                            <MDBRow>        {/* className="d-none d-md-block" */}
                                 <MDBCol>
                                     <SpecialsLeftNav navItems={leftNavItems} />
                                 </MDBCol>
@@ -63,6 +63,17 @@ const SpecialsPage = () => {
                                 <SpecialsItem specialsItemImage={envelopeImage} specialsItemHeadline={envelopeHeadline} specialsItemText={envelopeText} />
                             </div>
                         </MDBCol>
+
+                        {/* <MDBCol md="12" className="d-block d-md-none">
+                            <div>
+                                <PromoItem promoImage={promoImage} promoItemHeadline={promoHeadline} promoItemText={promoText} promoPriceChart={promoPriceChartImage} />
+                                
+                                <SpecialsItem specialsItemImage={pizzaCutterImage} specialsItemHeadline={pizzaCutterHeadline} specialsItemText={pizzaCutterText} />
+                                <SpecialsItem specialsItemImage={dimmerImage} specialsItemHeadline={dimmerHeadline} specialsItemText={dimmerText} />
+                                <SpecialsItem specialsItemImage={envelopeImage} specialsItemHeadline={envelopeHeadline} specialsItemText={envelopeText} />
+                            </div>
+                        </MDBCol> */}
+
                     </MDBRow>
                 </MDBCol>
             </MDBRow>

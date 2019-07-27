@@ -52,8 +52,8 @@ class Header extends Component {
                       </a>
                     </li>
                     <li className="upper-bar-right-links">
-                      {/* <a href="http://austex.com/request-a-custom-quote/"> */}
-                      <Link to="/request-a-custom-quote">
+                      <a href="http://austex.com/request-a-custom-quote/">
+                      {/* <Link to="/request-a-custom-quote"> */}
                         <span
                           style={{
                             color: '#ffffff',
@@ -65,8 +65,8 @@ class Header extends Component {
                         >
                           GET A QUOTE
                         </span>
-                      </Link>
-                      {/* </a> */}
+                      {/* </Link> */}
+                      </a>
                     </li>
                   </ul>
                 </nav>
@@ -76,17 +76,19 @@ class Header extends Component {
                 <div style={{ float: 'left' }}>
                 <ul className="above-nav-list">
                   <li className="above-nav-item">512.476.7581</li>
-                  <li className="above-nav-item">
+                  <a href="mailto:email0@email.com">
+                    <li className="above-nav-item">
                     email: austex@austex.com
                   </li>
+                  </a>
                   <li className="above-nav-item">Directions</li>
                 </ul>
                 <nav>
                   <ul className="nav-list">
-                    <li className="nav-item">Capabilties</li>
-                    <li className="nav-item">Equipment</li>
-                    <li className="nav-item">Gallery</li>
-                    <li className="nav-item">Customer Comments</li>
+                    <Link to="/gallery"><li className="nav-item">Capabilties</li></Link>
+                    <Link to="/gallery"><li className="nav-item">Equipment</li></Link>
+                    <Link to="/gallery"><li className="nav-item">Gallery</li></Link>
+                    <Link to="/gallery"><li className="nav-item">Customer Comments</li></Link>
                     <Link to="/specials"><li className="nav-item">Specials</li></Link>
                   </ul>
                 </nav>
@@ -119,18 +121,18 @@ class Header extends Component {
                                     <span className="mr-2 black-text" style={{marginRight: '0'}}>Menu</span> <MDBIcon icon="bars"/>
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu className="mobile-dropdown-menu" style={{backgroundColor: '#1F3F7C'}}>
-                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Capabilties</MDBDropdownItem></Link>
-                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Equipment</MDBDropdownItem></Link>
-                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Gallery</MDBDropdownItem></Link>
-                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Customer Comments</MDBDropdownItem></Link>
+                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Capabilties</MDBDropdownItem></Link>
+                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Equipment</MDBDropdownItem></Link>
+                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Gallery</MDBDropdownItem></Link>
+                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Customer Comments</MDBDropdownItem></Link>
                                   <Link to="/specials"><MDBDropdownItem className="white-text mobile-drop-item">Specials</MDBDropdownItem></Link>
-                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Email</MDBDropdownItem></Link>
-                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Directions</MDBDropdownItem></Link>
-                                  {/* <a href="http://austex.com/request-a-custom-quote/"> */}
-                                  <Link to="/request-a-custom-quote">
+                                  <a href="http://austex.com/request-a-custom-quote/">
+                                  {/* <Link to="/request-a-custom-quote"> */}
                                     <MDBDropdownItem className="white-text mobile-drop-item">Get A Quote</MDBDropdownItem>
-                                  </Link>
-                                  {/* </a> */}
+                                  {/* </Link> */}
+                                  </a>
+                                  <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Directions</MDBDropdownItem></Link>
+                                  <a href="mailto:email0@email.com"><MDBDropdownItem className="white-text mobile-drop-item">Email</MDBDropdownItem></a>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavItem>
@@ -138,7 +140,7 @@ class Header extends Component {
                     
                     <MDBNavbarNav right>
                         <MDBNavItem className="mobile-nav-item mobile-phone">
-                            <span className="mr-2 black-text">512.476.7581</span>
+                          <a href="tel:+1-555-555-5555"><span className="mr-2 black-text">512.476.7581</span></a>
                         </MDBNavItem>
                     </MDBNavbarNav>
               </MDBNavbar>

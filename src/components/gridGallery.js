@@ -21,10 +21,6 @@ const IMAGES = [
       'https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_n.jpg',
     thumbnailWidth: 320,
     thumbnailHeight: 212,
-    tags: [
-      { value: 'Ocean', title: 'Ocean' },
-      { value: 'People', title: 'People' },
-    ],
     caption: 'Boats (Jeshu John - designerspics.com)',
   },
 
@@ -90,7 +86,7 @@ const IMAGES = [
 const GridGallery = () => {
   return (
     <MDBContainer>
-      <h3>Gallery Page</h3>
+      <h3>Gallery</h3>
       <MDBRow>
         <MDBCol md="12">
           <Gallery images={IMAGES} enableImageSelection={false} />
