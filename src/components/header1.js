@@ -37,7 +37,8 @@ class Header extends Component {
                       roof.
                     </li>
                     <li className="upper-bar-right-links">
-                      <a href="http://austex.com/file-transfer/">
+                      <Link to="/submit-file">
+                      {/* <a href="http://austex.com/file-transfer/"> */}
                         <span
                           style={{
                             color: '#ffffff',
@@ -49,11 +50,12 @@ class Header extends Component {
                         >
                           UPLOAD <MDBIcon icon="file-upload" />
                         </span>
-                      </a>
+                      </Link>
+                      {/* </a> */}
                     </li>
                     <li className="upper-bar-right-links">
-                      <a href="http://austex.com/request-a-custom-quote/">
-                      {/* <Link to="/request-a-custom-quote"> */}
+                      <Link to="/request-a-custom-quote">
+                      {/* <a href="http://austex.com/request-a-custom-quote/"> */}
                         <span
                           style={{
                             color: '#ffffff',
@@ -65,8 +67,8 @@ class Header extends Component {
                         >
                           GET A QUOTE
                         </span>
-                      {/* </Link> */}
-                      </a>
+                      </Link>
+                      {/* </a> */}
                     </li>
                   </ul>
                 </nav>
@@ -126,11 +128,11 @@ class Header extends Component {
                                   <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Gallery</MDBDropdownItem></Link>
                                   <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Customer Comments</MDBDropdownItem></Link>
                                   <Link to="/specials"><MDBDropdownItem className="white-text mobile-drop-item">Specials</MDBDropdownItem></Link>
-                                  <a href="http://austex.com/request-a-custom-quote/">
-                                  {/* <Link to="/request-a-custom-quote"> */}
+                                  {/* <a href="http://austex.com/request-a-custom-quote/"> */}
+                                  <Link to="/request-a-custom-quote">
                                     <MDBDropdownItem className="white-text mobile-drop-item">Get A Quote</MDBDropdownItem>
-                                  {/* </Link> */}
-                                  </a>
+                                  </Link>
+                                  {/* </a> */}
                                   <Link to="/"><MDBDropdownItem className="white-text mobile-drop-item">Directions</MDBDropdownItem></Link>
                                   <a href="mailto:email0@email.com"><MDBDropdownItem className="white-text mobile-drop-item">Email</MDBDropdownItem></a>
                                 </MDBDropdownMenu>

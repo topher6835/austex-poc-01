@@ -6,28 +6,30 @@ import "../style/specialsItem.css";
 const SpecialsItem = (props) => {
     return (
         <div className="specials-item">
-            <MDBRow className="d-none d-md-block"> {/* DESKTOP */}
-                <MDBCol md="12">
-                    <div className="specials-page-headline-bar">
-                        <MDBRow>
-                            <MDBCol md="7">
-                                <h2 className="promo-headline">{props.specialsItemHeadline}</h2>
-                            </MDBCol>
-                            <MDBCol md="5">
-                                <h2>Design, Print, Mail</h2> {/* className="promo-headline-month" */}
-                            </MDBCol>
-                        </MDBRow>
-                    </div>
+
+            <MDBRow className="my-5 feature-row">
+                <MDBCol size="12">
+                    <MDBRow className="banner-row">
+                        <MDBCol className="d-none d-md-block" md="12">
+
+                            <div className="specials-page-headline-bar">
+                                <MDBRow>
+                                    <MDBCol md="7">
+                                        <h2 className="promo-headline ">{props.specialsItemHeadline}</h2>  {/* promo-headline responsive-title-bar-text*/}
+                                    </MDBCol>
+                                    <MDBCol md="5">
+                                        <h2 className="">Design, Print, Mail</h2> {/* promo-headline-month responsive-title-bar-text*/}
+                                    </MDBCol>
+                                </MDBRow>
+                            </div>
+
+                        </MDBCol>
+                        <MDBCol className="d-block d-md-none banner-bar-mobile" md="12">
+                            <h3 className="responsive-banner-bar-title-text-mobile">{props.specialsItemHeadline}</h3>
+                        </MDBCol>
+                    </MDBRow>
                 </MDBCol>
             </MDBRow>
-
-            <MDBRow className="d-block d-md-none">  {/* MOBILE */}
-                <div className="specials-page-headline-bar">
-                    <h2 className="promo-headline responsive-title-bar-text-mobile">{props.specialsItemHeadline}</h2>
-                    {/* <h2 className="promo-headline-month">Design, Print, Mail</h2> */}
-                </div>
-            </MDBRow>
-
 
             <MDBRow className="specials-item-content-row">
                 <MDBCol className="specials-item-img-col" md="5">
@@ -43,12 +45,15 @@ const SpecialsItem = (props) => {
                 </MDBCol>
                 <MDBCol className="specials-description-col" md="7">
                     <MDBRow>
-                        <p>
+                        {/* <p> */}
+                        <div className="content-description">
                             {props.specialsItemText}
-                        </p>
+                        </div>
+                        {/* </p> */}
                     </MDBRow>
                 </MDBCol>
             </MDBRow>
+
         </div>
     )
 }

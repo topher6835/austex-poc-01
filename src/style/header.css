@@ -67,7 +67,7 @@ header {
 .quick-tour-nav {
   float: right;
   height: 40px;
-  margin-right: -217px;
+  margin-right: -209px;
 }
 
 /* Responsive header */
@@ -106,6 +106,7 @@ header {
   background-color: #203e7c !important;
   padding: 9px;
   margin-top: 0px !important;
+  margin-right: 0px !important;
   width: 250px;
   height: 40px;
 }

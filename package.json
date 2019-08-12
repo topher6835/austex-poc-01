@@ -26,6 +26,10 @@
     "react-scroll-up": "^1.3.3",
     "smooth-scroll": "^16.1.0"
   },
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ],
   "keywords": [
     "Austex",
     "gatsby",

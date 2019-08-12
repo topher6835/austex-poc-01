@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBFormInline, MDBInput, MDBBtn, MDBIcon } from 'mdbreact';
 
 import Layout from '../components/layout';
+import "../style/requestQuote.css";
 
 class CustomQuote extends Component {
   state = {
@@ -36,7 +37,7 @@ class CustomQuote extends Component {
     return (
       <Layout>
         <MDBContainer>
-          <MDBRow><h2>Request a Custom Quote</h2></MDBRow>
+          <MDBRow><h1 className="request-quote-title">Request a Custom Quote</h1></MDBRow>
           <MDBRow>
             <form name="get-quote" method="POST">
             {/* <form name="get-quote" method="POST" netlify-honeypot="bot-field" data-netlify="true">
@@ -45,36 +46,39 @@ class CustomQuote extends Component {
               <div className="quote-form-basic-info-section">
                 <MDBRow>
                   <MDBCol md="4">
-                    <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                    <label htmlFor="firstName" className="">
                       First Name
                       <span className="frm_required"> *</span>
                     </label>
                     <input
                       type="text"
-                      id=""
+                      id="firstName"
                       name="firstName"
                       className="form-control"
+                      required
                     />
                   </MDBCol>
                   <MDBCol md="4">
-                    <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                    <label htmlFor="lastName" className="">
                       Last Name
                       <span className="frm_required"> *</span>
                     </label>
                     <input
                       type="text"
-                      id=""
+                      id="lastName"
                       name="lastName"
                       className="form-control"
+                      required
+
                     />
                   </MDBCol>
                   <MDBCol md="4">
-                    <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                    <label htmlFor="company" className="">
                       Company
                     </label>
                     <input
                       type="text"
-                      id=""
+                      id="company"
                       name="company"
                       className="form-control"
                     />
@@ -82,40 +86,43 @@ class CustomQuote extends Component {
                 </MDBRow>
                 <MDBRow>
                   <MDBCol md="4">
-                    <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                    <label htmlFor="email" className="">
                       Email Address
                       <span className="frm_required"> *</span>
                     </label>
                     <input
-                      type="text"
-                      id=""
+                      type="email"
+                      id="email"
                       name="email"
                       className="form-control"
+                      required
                     />
                   </MDBCol>
                   <MDBCol md="4">
-                    <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                    <label htmlFor="phoneNumber" className="">
                       Phone Number
                       <span className="frm_required"> *</span>
                     </label>
                     <input
-                      type="text"
-                      id=""
+                      type="tel"
+                      pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+                      id="phoneNumber"
                       name="phoneNumber"
                       className="form-control"
+                      required
                     />
                   </MDBCol>
                   <MDBCol md="4">
-                    <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                    <label htmlFor="salesRep" className="">
                       Your Sales Rep
                       <span className="frm_required"> *</span>
                     </label>
                     <select
                       className="browser-default custom-select"
                       name="salesRep"
-                      id=""
+                      id="salesRep"
                       data-placeholder="Select an option"
-                      aria-required="true"
+                      required
                     >
                       <option value="" selected="selected" className=""></option>
                       <option value="Becky Harper" className="">
@@ -156,14 +163,14 @@ class CustomQuote extends Component {
                 </MDBRow>
                 <MDBRow>
                   <MDBCol md="12">
-                    <label for="" className="grey-text">
+                    <label htmlFor="jobDescription" className="">
                       Description of job
                       <span className="frm_required"></span>
                     </label>
                     <textarea
                       type="text"
                       name="jobDescription"
-                      id=""
+                      id="jobDescription"
                       className="form-control"
                       rows="3"
                     ></textarea>
@@ -171,16 +178,16 @@ class CustomQuote extends Component {
                 </MDBRow>
                 <MDBRow>
                   <MDBCol md="4">
-                    <label for="" className="grey-text">
+                    <label htmlFor="jobType" className="">
                       Type of job
                       <span class="frm_required"> *</span>
                     </label>
                     <select
                       className="browser-default custom-select"
                       name="jobType"
-                      id=""
+                      id="jobType"
                       data-placeholder="Select an option"
-                      aria-required="true"
+                      required
                     >
                       <option value="" selected="selected" className=""></option>
                       <option value="Postcard" className="">
@@ -210,28 +217,28 @@ class CustomQuote extends Component {
                     </select>
                   </MDBCol>
                   <MDBCol md="4">
-                    <label for="" className="grey-text">
+                    <label htmlFor="pageSize" className="">
                       Page size (eg: 8.5 x 11")
                       <span className="frm_required"> *</span>
                     </label>
                     <input
                       type="text"
-                      id=""
+                      id="pageSize"
                       name="pageSize"
                       className="form-control"
                     />
                   </MDBCol>
                   <MDBCol md="4">
-                    <label for="" className="grey-text">
+                    <label htmlFor="#ofPages" className="">
                       # of pages (printed sides)
                       <span className="frm_required"> *</span>
                     </label>
                     <input
                       type="number"
                       className="form-control"
-                      id=""
+                      id="#ofPages"
                       name="#ofPages"
-                      aria-required="true"
+                      required
                       min="0"
                       max="9999999"
                       step="1"
@@ -240,10 +247,10 @@ class CustomQuote extends Component {
                 </MDBRow>
                 <MDBRow>
                     <MDBCol md="3">
-                        <label for="" className="grey-text">Do any pages have bleed?
+                        <label htmlFor="bleed" className="">Do any pages have bleed?
                             <span className="frm_required"></span>
                         </label>
-                        <select className="browser-default custom-select" name="bleed" id="" data-placeholder="Select an option">
+                        <select className="browser-default custom-select" name="bleed" id="bleed" data-placeholder="Select an option">
                             <option value=""  selected="selected" className="">
                             </option>
                             <option value="Yes"  className="">
@@ -253,10 +260,10 @@ class CustomQuote extends Component {
                         </select>
                     </MDBCol>
                     <MDBCol md="3">
-                        <label for="" className="grey-text">Do you require perforations?
+                        <label htmlFor="perforations" className="">Do you require perforations?
                             <span className="frm_required"></span>
                         </label>
-                        <select className="browser-default custom-select" name="perforations" id="" data-placeholder="Select an option">
+                        <select className="browser-default custom-select" name="perforations" id="perforations" data-placeholder="Select an option">
                             <option value=""  selected="selected" className="">
                             </option>
                             <option value="Yes" className="">
@@ -266,10 +273,10 @@ class CustomQuote extends Component {
                         </select>
                     </MDBCol>
                     <MDBCol md="3">
-                        <label for="" className="grey-text">What kind of printing do you require?
+                        <label htmlFor="printingType" className="">What kind of printing do you require?
                             <span className="frm_required"></span>
                         </label>
-                        <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option">
+                        <select className="browser-default custom-select" name="printingType" id="printingType" data-placeholder="Select an option">
                             <option value=""  selected="selected" className="">
                             </option>
                             <option value="Digital Printing / Copy Job" className="">
@@ -279,10 +286,10 @@ class CustomQuote extends Component {
                         </select>
                     </MDBCol>
                     <MDBCol md="3">
-                        <label for="" className="grey-text">Total Finished Quantity
+                        <label htmlFor="quantity" className="">Total Finished Quantity
                             <span className="frm_required"></span>
                         </label>
-                        <input className="form-control" type="number" id="" name="" value=""min="0" max="9999999" step="1"/>
+                        <input className="form-control" type="number" id="quantity" name="quantity" value=""min="0" max="9999999" step="1"/>
                     </MDBCol>
                 </MDBRow>
               </div>
@@ -290,10 +297,10 @@ class CustomQuote extends Component {
                   <h3 className="">Colors &amp; Finish</h3>
                   <MDBRow>
                       <MDBCol md="3">
-                          <label for="" className="grey-text">Process colors
+                          <label htmlFor="processColors" className="">Process colors
                               <span className="frm_required"></span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option">
+                          <select className="browser-default custom-select" name="processColors" id="processColors" data-placeholder="Select an option">
                               <option value="" selected="selected" className=""></option>
                               <option value="None" className="">
                               None</option>
@@ -308,10 +315,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="3">
-                          <label for="field_vgj3d8" className="grey-text">Spot colors
+                          <label htmlFor="spotColors" className="">Spot colors
                               <span className="frm_required"></span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option">
+                          <select className="browser-default custom-select" name="spotColors" id="spotColors" data-placeholder="Select an option">
                               <option value=""  selected="selected" className=""></option>
                               <option value="None" className="">
                               None</option>
@@ -326,10 +333,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="3">
-                          <label for="" className="grey-text">Foil or Emboss?
+                          <label htmlFor="foilEmboss" className="">Foil or Emboss?
                               <span class="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id=""data-placeholder="Select an option" aria-required="true">
+                          <select className="browser-default custom-select" name="foilEmboss" id="foilEmboss" data-placeholder="Select an option" required>
                               <option value="" selected="selected" classNamelass="">
                               </option>
                               <option value="None" className="">
@@ -343,10 +350,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="3">
-                          <label for="" className="grey-text">Varnish
+                          <label htmlFor="varnish" className="">Varnish
                               <span className="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option" aria-required="true">
+                          <select className="browser-default custom-select" name="varnish" id="varnish" data-placeholder="Select an option" required>
                               <option value="" selected="selected" className=""></option>
                               <option value="None" className="">
                               None</option>
@@ -362,10 +369,10 @@ class CustomQuote extends Component {
                   <h3 className="">Paper &amp; Bindery</h3>
                   <MDBRow>
                       <MDBCol md="4">
-                          <label for="" className="grey-text">Cover Paper
+                          <label htmlFor="coverPaper" className="">Cover Paper
                               <span className="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option" aria-required="true">
+                          <select className="browser-default custom-select" name="coverPaper" id="coverPaper" data-placeholder="Select an option" required>
                               <option value=""  selected="selected" className=""></option>
                               <option value="80# Gloss Cover" className="">
                               80# Gloss Cover</option>
@@ -384,10 +391,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="4">
-                          <label for="" className="grey-text">Text Paper
+                          <label htmlFor="textPaper" className="">Text Paper
                               <span className="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="field_3w0xnl" data-placeholder="Select an option" aria-required="true">
+                          <select className="browser-default custom-select" name="textPaper" id="textPaper" data-placeholder="Select an option" required>
                               <option value=""  selected="selected" className="">
                               </option>
                               <option value="80# Gloss Text" className="">
@@ -407,10 +414,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="4">
-                          <label for="" className="grey-text">Folding
+                          <label htmlFor="folding" className="">Folding
                               <span class="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option" aria-required="true">
+                          <select className="browser-default custom-select" name="folding" id="folding" data-placeholder="Select an option" required>
                               <option value=""  selected="selected" className="">
                               </option>
                               <option value="Single fold" className="">
@@ -430,16 +437,16 @@ class CustomQuote extends Component {
                   </MDBRow>
                   <MDBRow>
                       <MDBCol md="4">
-                          <label for="field_8n2ba5" className="grey-text">Finished Page Size
+                          <label htmlFor="finishedPageSize" className="">Finished Page Size
                               <span className="frm_required"></span>
                           </label>
-                          <input className="form-control" type="text" id="" name=""/>
+                          <input className="form-control" type="text" id="finishedPageSize" name="finishedPageSize"/>
                       </MDBCol>
                       <MDBCol md="4">
-                          <label for="" className="grey-text">Die Cut
+                          <label htmlFor="dieCut" className="">Die Cut
                               <span className="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option"aria-required="true">
+                          <select className="browser-default custom-select" name="dieCut" id="dieCut" data-placeholder="Select an option" required>
                               <option value=""  selected="selected" className="">
                               </option>
                               <option value="Yes" className="">
@@ -449,10 +456,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="4">
-                          <label for="" className="grey-text">Bindery
+                          <label htmlFor="bindery" className="">Bindery
                               <span className="frm_required"> *</span>
                           </label>
-                      <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option" aria-required="true">
+                      <select className="browser-default custom-select" name="bindery" id="bindery" data-placeholder="Select an option" required>
                       <option value="" selected="selected" className=""></option>
                               <option value="Leave flat - no trim" className="">
                               Leave flat - no trim</option>
@@ -475,10 +482,10 @@ class CustomQuote extends Component {
               <div className="quote-form-delivery-section">
                   <MDBRow>
                       <MDBCol md="6">
-                          <label for="" className="grey-text">Shipping
+                          <label htmlFor="shipping" className="">Shipping
                               <span className="frm_required"> *</span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option" aria-required="true">
+                          <select className="browser-default custom-select" name="shipping" id="shipping" data-placeholder="Select an option" required>
                           <option value="" selected="selected" className=""></option>
                               <option value="Pick up from Austex" className="">
                               Pick up from Austex</option>
@@ -491,10 +498,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="6">
-                          <label for="" className="grey-text">Packaging
+                          <label htmlFor="packaging" className="">Packaging
                               <span className="frm_required"></span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option">
+                          <select className="browser-default custom-select" name="packaging" id="packaging" data-placeholder="Select an option">
                           <option value=""  selected="selected" className=""></option>
                               <option value="Box" className="">
                               Box</option>
@@ -512,10 +519,10 @@ class CustomQuote extends Component {
                   <h3 class="">Design/Data Files</h3>
                   <MDBRow>
                       <MDBCol md="6">
-                          <label for="" className="grey-text">File Format
+                          <label htmlFor="fileFormat" className="">File Format
                               <span className="frm_required"></span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option">
+                          <select className="browser-default custom-select" name="fileFormat" id="fileFormat" data-placeholder="Select an option">
                               <option value=""  selected="selected" className=""></option>
                               <option value="PDF" className="">
                               PDF</option>
@@ -536,10 +543,10 @@ class CustomQuote extends Component {
                           </select>
                       </MDBCol>
                       <MDBCol md="6">
-                          <label for="" className="grey-text">Sending via
+                          <label htmlFor="sendingVia" className="">Sending via
                               <span className="frm_required"></span>
                           </label>
-                          <select className="browser-default custom-select" name="" id="" data-placeholder="Select an option">
+                          <select className="browser-default custom-select" name="sendingVia" id="sendingVia" data-placeholder="Select an option">
                               <option value=""  selected="selected" className=""></option>
                               <option value="Austex website" className="">
                               Austex website</option>
@@ -554,32 +561,32 @@ class CustomQuote extends Component {
                   </MDBRow>
                   <MDBRow>
                       <MDBCol md="12">
-                          <label for="" className="grey-text">Additional Information
+                          <label htmlFor="additionalInfo" className="">Additional Information
                               <span className="frm_required"></span>
                           </label>
-                          <textarea type="text" className="form-control" name="" id="" rows="3"></textarea>
+                          <textarea type="text" className="form-control" name="additionalInfo" id="additionalInfo" rows="3"></textarea>
                       </MDBCol>
                   </MDBRow>
               </div>
               <div className="quote-form-receive-info-section">
                   <MDBRow>
                       <MDBCol md="4">
-                          <label className="grey-text">Receive occasional news &amp; offers from Aus-Tex
+                          <label className="">Receive occasional news &amp; offers from Aus-Tex
                               <span className="frm_required"> *</span>
                           </label>
                         <MDBRow>
                           <MDBCol md="6">
-                            <input type="radio" id="" name="receiveNews" value="Yes" label="Yes, please!" checked /> <label for="choice1">Yes, please!</label>
+                            <input type="radio" id="receiveNewsYes" name="receiveNews" value="Yes" label="Yes, please!" checked /> <label for="receiveNewsYes">Yes, please!</label>
                           </MDBCol>
                           <MDBCol md="6">
-                            <input type="radio" id="" name="receiveNews" value="No" /> <label for="choice2">No thanks.</label>
+                            <input type="radio" id="receiveNewsNo" name="receiveNews" value="No" /> <label for="receiveNewsNo">No thanks.</label>
                           </MDBCol>
                         </MDBRow>
                       </MDBCol>
                   </MDBRow>
               </div>
-              <div className="text-center mt-4">
-                <MDBBtn color="indigo" type="submit">Submit</MDBBtn>
+              <div className="mt-4">  {/* text-center */}
+                <MDBBtn className="quote-submit-button"  type="submit">Submit</MDBBtn>
               </div>
             </form>
           </MDBRow>

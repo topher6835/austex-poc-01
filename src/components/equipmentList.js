@@ -3,7 +3,7 @@ import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 
 const Equipment = props => {
   return (
-    <MDBContainer>
+    <MDBContainer style={{marginTop: '10px', marginBottom: '10px'}}>
         <MDBRow>
             <MDBCol md="12">
                 <h3>Equipment list here.</h3>

@@ -53,38 +53,44 @@ const SubmitFile = () => {
                                     <input type="hidden" name="form-name" value="file-submit" /> */}
                                     <MDBRow>
                                         <MDBCol md="6">
-                                            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                                            <label htmlFor="yourName" className="">
                                                 Your Name <span className="frm_required"> *</span>
                                             </label>
-                                            <input type="text" id="" name="yourName" className="form-control"/>
+                                            <input type="text" id="yourName" name="yourName" className="form-control" required />
                                         </MDBCol>
                                         <MDBCol md="6">
-                                            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                                            <label htmlFor="company" className="">
                                                 Your Company <span className="frm_required"> *</span>
                                             </label>
-                                            <input type="text" id="" name="company" className="form-control"/>
+                                            <input type="text" id="company" name="company" className="form-control" required />
                                         </MDBCol>
                                     </MDBRow>
                                     <MDBRow>
                                         <MDBCol md="6">
-                                            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                                            <label htmlFor="email" className="">
                                                 Email Address <span className="frm_required"> *</span>
                                             </label>
-                                            <input type="text" id="" name="email" className="form-control"/>
+                                            <input type="email" id="email" name="email" className="form-control" required />
                                         </MDBCol>
                                         <MDBCol md="6">
-                                            <label htmlFor="defaultFormContactNameEx" className="grey-text">
+                                            <label htmlFor="phoneNumber" className="">
                                                 Phone Number <span className="frm_required"> *</span>
                                             </label>
-                                            <input type="text" id="" name="phoneNumber" className="form-control"/>
+                                            <input 
+                                                type="tel" 
+                                                pattern="((\+\d{1,3}(-|.| )?\(?\d\)?(-| |.)?\d{1,5})|(\(?\d{2,6}\)?))(-|.| )?(\d{3,4})(-|.| )?(\d{4})(( x| ext)\d{1,5}){0,1}$"
+                                                id="phoneNumber" 
+                                                name="phoneNumber" 
+                                                className="form-control" 
+                                                required />
                                         </MDBCol>
                                     </MDBRow>
                                     <MDBRow>
                                         <MDBCol md="12">
-                                            <label for="" className="grey-text">Your Sales Representative
+                                            <label htmlFor="salesRep" className="">Your Sales Representative
                                                 <span className="frm_required"> *</span>
                                             </label>
-                                            <select name="salesRep" id="" className="browser-default custom-select">
+                                            <select name="salesRep" id="salesRep" className="browser-default custom-select" required>
                                                 <option value="" selected="selected" className="">
                                                 </option>
                                                 <option value="Becky Harper" className="">
@@ -112,14 +118,14 @@ const SubmitFile = () => {
                                     </MDBRow>
                                     <MDBRow>
                                         <MDBCol md="12">
-                                            <label for="" className="grey-text">
+                                            <label htmlFor="additionInfo" className="">
                                                 Message or Additional Information
                                                 <span className="frm_required"></span>
                                             </label>
                                             <textarea
                                                 type="text"
                                                 name="additionInfo"
-                                                id=""
+                                                id="additionInfo"
                                                 className="form-control"
                                                 rows="3"
                                             ></textarea>
@@ -127,40 +133,43 @@ const SubmitFile = () => {
                                     </MDBRow>
                                     <MDBRow>
                                         <MDBCol md="12">
-                                            <label for="" className="grey-text">
+                                            <label htmlFor="fileUpload" className="">
                                                 File Upload
                                                 <span className="frm_required"> *</span>
                                             </label>
                                             <div className="input-group">
                                                 <div className="custom-file">
                                                     <input
-                                                    type="file"
-                                                    className="custom-file-input"
-                                                    id="inputGroupFile01"
-                                                    aria-describedby="inputGroupFileAddon01"
+                                                        type="file"
+                                                        className="custom-file-input"
+                                                        id="fileUpload"
+                                                        name="fileUpload"
+                                                        required
                                                     />
                                                     <label className="custom-file-label" htmlFor="inputGroupFile01">
-                                                    Choose file
+                                                        Choose file
                                                     </label>
                                                 </div>
                                             </div>
                                         </MDBCol>
                                     </MDBRow>
-                                    <MDBRow>
-                                        <MDBCol md="12">
-                                            <label className="grey-text">Receive occasional news &amp; offers from Aus-Tex
-                                                <span className="frm_required"> *</span>
-                                            </label>
-                                            <MDBRow>
-                                                <MDBCol md="3">
-                                                    <input type="radio" id="" name="receiveNews" value="Yes" label="Yes, please!" checked /> <label for="choice1" style={{color: "#000000"}}>Yes, please!</label>
-                                                </MDBCol>
-                                                <MDBCol md="3">
-                                                    <input type="radio" id="" name="receiveNews" value="No" /> <label for="choice2" style={{color: "#000000"}}>No thanks.</label>
-                                                </MDBCol>
-                                            </MDBRow>
-                                        </MDBCol>
-                                    </MDBRow>
+                                    <div className="submit-file-receive-info-section">
+                                        <MDBRow>
+                                            <MDBCol md="12">
+                                                <label className="">Receive occasional news &amp; offers from Aus-Tex
+                                                    <span className="frm_required"> *</span>
+                                                </label>
+                                                <MDBRow>
+                                                    <MDBCol md="3">
+                                                        <input type="radio" id="receiveNewsYes" name="receiveNews" value="Yes" label="Yes, please!" checked /> <label for="receiveNewsYes">Yes, please!</label>
+                                                    </MDBCol>
+                                                    <MDBCol md="3">
+                                                        <input type="radio" id="receiveNewsNo" name="receiveNews" value="No" /> <label for="receiveNewsNo">No thanks.</label>
+                                                    </MDBCol>
+                                                </MDBRow>
+                                            </MDBCol>
+                                        </MDBRow>
+                                    </div>
                                         <div className="text-center mt-4">
                                             <MDBBtn className="file-submit-button" type="submit">Submit</MDBBtn>
                                         </div>

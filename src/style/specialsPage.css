@@ -3,8 +3,16 @@
     min-width: 1104px;
   }
 }
+@media (max-width: 738px) {
+  .override-mobile {
+    padding: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+}
 .specials-main-row {
-  padding: 0 40px;
+  /* padding: 0 20px; */
+  margin: 0;
 }
 .specials-page-headline-bar {
   width: 100%;

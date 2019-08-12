@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { MDBRow, MDBCol, MDBContainer } from "mdbreact";
 
-import "../style/featureNav.css";
+// import "../style/featureNav.css";
 
 import icon01 from "../images/icons/icon01.png";
 import icon02 from "../images/icons/icon02.png";

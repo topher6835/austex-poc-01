@@ -13,8 +13,8 @@ import "../style/gallery.css";
 const GalleryPage = () => {
   return (
       <Layout>
-        <MDBRow className="my-5 gallery-main-row">
-          <MDBCol size="12">
+        <MDBRow className="my-5 gallery-main-row" style={{ margin: '0px' }}>
+          <MDBCol size="12" >
             <MDBRow>
               <MDBCol className="left-comments-column" md="3" style={{backgroundColor: '#203e7c', color: 'white'}}>
                 <MDBRow>
