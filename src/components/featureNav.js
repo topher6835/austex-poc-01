@@ -18,24 +18,28 @@ const FeaturesNav = () => {
             <MDBRow>
                 <MDBCol size="12">
                     <MDBRow className="feature-nav-row">
-
+                    
                         <MDBCol>
                             <Link to="/#feature1">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon05} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half ">
+                                    <div className="feature-nav-img">
+                                        <img src={icon05} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2 ">
                                     OFFSET PRINTING
                                 </div>
-                            </Link>
+                            </Link> 
                         </MDBCol>
 
                         <MDBCol>
                             <Link to="/#feature2">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon01} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half">
+                                    <div className="feature-nav-img">
+                                        <img src={icon01} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2">
                                     DIGITAL PRINTING
                                 </div>
                             </Link>
@@ -43,10 +47,12 @@ const FeaturesNav = () => {
 
                         <MDBCol>
                             <Link to="/#feature3">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon04} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half">
+                                    <div className="feature-nav-img">
+                                        <img src={icon04} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2">
                                     MAILING {'\&'} FULFILLMENT
                                 </div>
                             </Link>
@@ -54,10 +60,12 @@ const FeaturesNav = () => {
 
                         <MDBCol>
                             <Link to="/#feature4">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon02} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half">
+                                    <div className="feature-nav-img">
+                                        <img src={icon02} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2">
                                     EMBOSSING, FOILING {'\&'} DIE CUTTING
                                 </div>
                             </Link>
@@ -65,10 +73,12 @@ const FeaturesNav = () => {
 
                         <MDBCol>
                             <Link to="/#feature5">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon06} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half">
+                                    <div className="feature-nav-img">
+                                        <img src={icon06} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2">
                                     PROMOTIONAL {'\&'} SPECIALTY ITEMS
                                 </div>
                             </Link>
@@ -76,10 +86,12 @@ const FeaturesNav = () => {
 
                         <MDBCol>
                             <Link to="/#feature6">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon07} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half">
+                                    <div className="feature-nav-img">
+                                        <img src={icon07} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2">
                                     WIDE FORMAT
                                 </div>
                             </Link>
@@ -87,10 +99,12 @@ const FeaturesNav = () => {
 
                         <MDBCol>
                             <Link to="/#feature7">
-                                <div className="feature-nav-img z-depth-1-half">
-                                    <img src={icon03} alt="" />
+                                <div className="feature-nav-img-top z-depth-1-half">
+                                    <div className="feature-nav-img">
+                                        <img src={icon03} alt="" />
+                                    </div>
                                 </div>
-                                <div className="feature-nav-name">
+                                <div className="feature-nav-name p-2">
                                     GRAPHIC DESIGN {'\&'} ONLINE MARKETING
                                 </div>
                             </Link>

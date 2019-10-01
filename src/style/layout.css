@@ -87,17 +87,32 @@
 .feature-nav-row {
   text-align: center;
 }
-.feature-nav-img {
+.feature-nav-img-top { 
   margin-top: 16px;
   display: inline-block;
   overflow: hidden;
-  /* REQUIRED for SAFARI - zoom effect overflow was not hidden: */
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
   width: 100px;
   height: 100px;
-  /* border: 3px solid #d2222c; */
   color: #1f3f7c;
   text-decoration: none;
+  border: 3px solid #d2222c;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+.feature-nav-img {
+  /* margin-top: 16px;
+  display: inline-block;
+  overflow: hidden; */
+
+  /* REQUIRED for SAFARI - zoom effect overflow was not hidden: */
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+
+  /* width: 100px;
+  height: 100px; */
+  /* color: #1f3f7c;
+  text-decoration: none; */
+
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;

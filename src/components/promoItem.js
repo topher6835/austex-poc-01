@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 
 import "../style/promoItem.css";
-import promoImage from "../images/carousel/mugs-camp-copy.jpg";
+//import promoImage from "../images/products/mugs-camp-copy.jpg";
 
 // PROMO
 
@@ -41,7 +41,7 @@ const PromoItem = (props) => {
                     <tr>
                         <td>
                             {/* <img src={require("../images/products/" + props.promoImage) } />   */}
-                            <img src={promoImage} />
+                            <img src={props.promoImage} />
                         </td>
                     </tr>
                 </table>

@@ -76,24 +76,24 @@ class Header extends Component {
 
               <div className="lower-bar">
                 <div style={{ float: 'left' }}>
-                <ul className="above-nav-list">
-                  <li className="above-nav-item">512.476.7581</li>
-                  <a href="mailto:email0@email.com">
-                    <li className="above-nav-item">
-                    email: austex@austex.com
-                  </li>
-                  </a>
-                  <li className="above-nav-item">Directions</li>
-                </ul>
-                <nav>
-                  <ul className="nav-list">
-                    <Link to="/gallery"><li className="nav-item">Capabilties</li></Link>
-                    <Link to="/gallery"><li className="nav-item">Equipment</li></Link>
-                    <Link to="/gallery"><li className="nav-item">Gallery</li></Link>
-                    <Link to="/gallery"><li className="nav-item">Customer Comments</li></Link>
-                    <Link to="/specials"><li className="nav-item">Specials</li></Link>
+                  <ul className="above-nav-list">
+                    <li className="above-nav-item">512.476.7581</li>
+                    <a href="mailto:email0@email.com">
+                      <li className="above-nav-item">
+                        email: austex@austex.com
+                      </li>
+                    </a>
+                    <Link to="/directions"><li className="above-nav-item">Directions</li></Link>
                   </ul>
-                </nav>
+                  <nav>
+                    <ul className="nav-list">
+                      <Link to="/gallery"><li className="nav-item">Capabilties</li></Link>
+                      <Link to="/gallery"><li className="nav-item">Equipment</li></Link>
+                      <Link to="/gallery"><li className="nav-item">Gallery</li></Link>
+                      <Link to="/gallery"><li className="nav-item">Customer Comments</li></Link>
+                      <Link to="/specials"><li className="nav-item">Specials</li></Link>
+                    </ul>
+                  </nav>
                 </div>
                 <div className="quick-tour-nav">
                   <Fragment>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "gatsby";
 import { MDBBtn } from 'mdbreact';
 
-import "../style/specialsPage.css";
+// import "../style/specialsPage.css";
 
 const CustomQuoteBlock = props => {
     return (
