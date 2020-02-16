@@ -11,6 +11,7 @@ Proof of concept for [Austex](http://austex.com) built using GtasbyJS and React 
 - [React Responsive Carousel](https://github.com/leandrowd/react-responsive-carousel)
 - [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
 - [react-grid-gallery](https://github.com/benhowell/react-grid-gallery)
+- [react-scroll-up](https://github.com/milosjanda/react-scroll-up)
 
 ## Usage
 

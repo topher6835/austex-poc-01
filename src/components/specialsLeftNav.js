@@ -1,7 +1,5 @@
 import React from 'react';
 
-import "../style/specialsLeftNav.css";
-
 const SpecialsLeftNav = props => {
   return (
     <div className="left-specials-nav">

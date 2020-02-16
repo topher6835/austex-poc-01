@@ -40,7 +40,7 @@ const Feature = (props) => {
           <MDBRow className="feature-content" style={{ marginTop: '35px' }}>
             <MDBCol className="d-none d-md-block" md="4">
               <img
-                className="img-fluid"
+                className="img-fluid feature-large-img"
                 style={{ height: '320px', width: '320px' }}
                 src={props.leftImage}
                 alt=""

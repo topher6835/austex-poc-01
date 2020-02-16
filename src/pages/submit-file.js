@@ -185,25 +185,3 @@ const SubmitFile = () => {
 }
 
 export default SubmitFile;
-
-/* 
-<MDBRow className="justify-content-center">
-    <MDBIcon icon="file-upload" style={{fontSize: '6rem', color: '#1f3f7c'}} />
-</MDBRow>
-<MDBRow className="justify-content-center" >
-    <MDBCol md="8" className="send-file-col">
-        <div className="send-file-div">
-        <MDBRow className="justify-content-center">
-        <h5 className="send-file-text">Need to send us a file?</h5>
-        </MDBRow>
-        <MDBRow className="justify-content-center">
-        <Link to="/submit-file">
-        <MDBBtn outline color="white" className="send-file-button">
-        Click Here!
-        </MDBBtn>
-        </Link>
-        </MDBRow>
-        </div>
-    </MDBCol>
-</MDBRow>
-*/

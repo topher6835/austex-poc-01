@@ -1,8 +1,6 @@
 import React from 'react';
 import { MDBRow, MDBCol } from 'mdbreact';
 
-import "../style/specialsItem.css";
-
 const SpecialsItem = (props) => {
     return (
         <div className="specials-item">

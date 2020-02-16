@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Carousel4 from '../components/carousel4';
+import Carousel from '../components/carousel';
 import FeatureNav from '../components/featureNav';
-import FeaturesSection2 from '../components/featuresSection2';
+import FeaturesSection from '../components/featuresSection';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -30,10 +30,10 @@ class App extends Component {
               `Promotions`,
             ]}
           />
-          <Carousel4 />
+          <Carousel />
           <main>
             <FeatureNav />
-            <FeaturesSection2 />
+            <FeaturesSection />
           </main>
         </Layout>
       </>

@@ -1,3 +1,10 @@
+
+@media screen and (max-width: 766px) {
+    .request-quote-main-row {
+      margin-bottom: 100px !important;
+    }
+}
+
 .request-quote-title {
     display: none;
     margin-top: 10px;
@@ -14,7 +21,6 @@
     padding: 10px 0;
     width: 250px;
     font-size: 1.2rem;
-    /* font-weight: 500; */
 }
 form {
     margin-top : 20px;

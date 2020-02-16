@@ -1,7 +1,9 @@
 /* CAROUSEL */
 .carousel {
+  /* height: 464px; */
 }
 .carousel img {
+  height: 464px;
   width: 100%;
   min-width: 875px;
   object-fit: cover;

@@ -36,9 +36,9 @@ class CustomQuote extends Component {
   render() {
     return (
       <Layout>
-        <MDBContainer>
+        <MDBContainer >
           <MDBRow><h1 className="request-quote-title">Request a Custom Quote</h1></MDBRow>
-          <MDBRow>
+          <MDBRow className="request-quote-main-row">
             <form name="get-quote" method="POST">
             {/* <form name="get-quote" method="POST" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="bot-field" />

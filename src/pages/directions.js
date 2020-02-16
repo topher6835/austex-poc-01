@@ -3,13 +3,14 @@ import { MDBRow, MDBCol } from 'mdbreact';
 
 import Layout from '../components/layout';
 import Map from '../components/gMap';
-// import "../style/gallery.css";
+
+import "../style/directions.css";
 
 const Directions = () => {
   return (
       <Layout>
           <h2 style={{textAlign: 'center'}}>Directions Page</h2>
-          <MDBRow className="my-5" style={{margin: '5px'}}>
+          <MDBRow className="my-5 directions-main-row" style={{margin: '5px'}}>
             <MDBCol size="12">
               <MDBRow>
                 <h4 style={{textAlign: 'center', width: '100%'}}>2431 Forbes Drive</h4>

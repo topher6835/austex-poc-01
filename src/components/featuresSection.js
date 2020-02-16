@@ -3,8 +3,24 @@ import Feature from './feature';
 
 import offsetPrintingIcon from '../images/icons/icon05.png'
 const offsetPrintingTitle = 'Offset Printing';
-const offestPrintingLeftImage = 'https://i0.wp.com/austex.com/wp-content/uploads/2015/09/mailing_services.jpg';
-const offsetPrintingText = (<div></div>);
+//const offestPrintingLeftImage = 'https://i0.wp.com/austex.com/wp-content/uploads/2015/09/mailing_services.jpg';
+const offsetPrintingText = (<div>
+  Our printing plant in Austin is home to a full array of sheet-fed Heidelberg precision presses. Having a large variety of presses in house, we pride ourselves on matching your job with the appropriate press to maximize efficiency and economy. With many commercial printers boasting largely the same capabilities, Aus-Tex controls cost and turnaround with smart production management. However, what sets Aus-Tex apart is our obsession with quality – our passion for printing is front and center on every project. 
+  <br/><br/>
+  We employ the latest computer-to-plate workflow which dramatically reduces the time to create a physical printing plate from digital artwork. Computer-to-plate technology replaces older, film-based procedures and allows us to make your last minute corrections more easily. We accept all industry standard file formats, and our highly capable imaging department provides many file manipulation and preparation services.
+  <br/><br/>
+  <ul style={{ listStyleType: 'none', paddingLeft: '0' }}>
+    <li style={{fontWeight: '500'}}>Versatile Proven Equipment</li>
+    <li>40" Heidelberg Speedmaster (SM102) w/ Coater</li>
+    <li>40" Heidelberg Speedmaster (SM102) w/ Perfector</li>
+    <li>20" Heidelberg Speedmaster (SM52)</li>
+    <li>18" Heidelberg Printmaster (QM46)</li>
+    <li>18" Heidelberg Printmaster (PM46)</li>
+    <li>Heidelberg 20"x26" Flatbed Letterpress</li>
+    <li>Heidelberg 10"x15" Windmill Letterpress</li>
+  </ul>
+
+</div>);
 //
 import digitalPrintingIcon from '../images/icons/icon01.png'
 const digitalPrintingTitle = 'Digital Printing';
@@ -56,7 +72,7 @@ const FeaturesSection = () => {
     <div>
       <Feature 
         icon={offsetPrintingIcon} title={offsetPrintingTitle} leftImage={fillerLeftImage}
-        textBlock={fillerText} id={"feature1"}
+        textBlock={offsetPrintingText} id={"feature1"}
       />
       <Feature 
         icon={digitalPrintingIcon} title={digitalPrintingTitle} leftImage={fillerLeftImage}

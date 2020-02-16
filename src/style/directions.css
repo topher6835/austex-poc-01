@@ -1,0 +1,9 @@
+@media screen and (max-width: 766px) {
+    .directions-main-row {
+      margin-bottom: 100px !important;
+    }
+  }
+
+.directions-main-row {
+    /* margin: 5px; */
+}
