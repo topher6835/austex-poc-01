@@ -65,37 +65,37 @@ const fillerText = (
     </p>
   </div>
 );
-const fillerLeftImage = 'https://i0.wp.com/austex.com/wp-content/uploads/2015/09/mailing_services.jpg';
+//const fillerLeftImage = 'https://i0.wp.com/austex.com/wp-content/uploads/2015/09/mailing_services.jpg';
 
 const FeaturesSection = () => {
   return (
     <div>
       <Feature 
-        icon={offsetPrintingIcon} title={offsetPrintingTitle} leftImage={fillerLeftImage}
+        icon={offsetPrintingIcon} title={offsetPrintingTitle} leftImage={offsetPrintingIcon}
         textBlock={offsetPrintingText} id={"feature1"}
       />
       <Feature 
-        icon={digitalPrintingIcon} title={digitalPrintingTitle} leftImage={fillerLeftImage}
+        icon={digitalPrintingIcon} title={digitalPrintingTitle} leftImage={digitalPrintingIcon}
         textBlock={fillerText} id={"feature2"}
       />
       <Feature 
-        icon={mailingFulfillmentIcon} title={mailingFulfillmentTitle} leftImage={fillerLeftImage}
+        icon={mailingFulfillmentIcon} title={mailingFulfillmentTitle} leftImage={mailingFulfillmentIcon}
         textBlock={fillerText} id={"feature3"}
       />
       <Feature 
-        icon={embossingFoilingDieCuttingIcon} title={embossingFoilingDieCuttingTitle} leftImage={fillerLeftImage}
+        icon={embossingFoilingDieCuttingIcon} title={embossingFoilingDieCuttingTitle} leftImage={embossingFoilingDieCuttingIcon}
         textBlock={fillerText} id={"feature4"}
       />
       <Feature 
-        icon={promotionalSpecialtyIcon} title={promotionalSpecialtyTitle} leftImage={fillerLeftImage}
+        icon={promotionalSpecialtyIcon} title={promotionalSpecialtyTitle} leftImage={promotionalSpecialtyIcon}
         textBlock={fillerText} id={"feature5"}
       />
       <Feature 
-        icon={wideFromatIcon} title={wideFromatTitle} leftImage={fillerLeftImage}
+        icon={wideFromatIcon} title={wideFromatTitle} leftImage={wideFromatIcon}
         textBlock={fillerText} id={"feature6"}
       />
       <Feature 
-        icon={graphicDesignOnlineMarketingIcon} title={graphicDesignOnlineMarketingTitle} leftImage={fillerLeftImage}
+        icon={graphicDesignOnlineMarketingIcon} title={graphicDesignOnlineMarketingTitle} leftImage={graphicDesignOnlineMarketingIcon}
         textBlock={fillerText} id={"feature7"}
       />
     </div>

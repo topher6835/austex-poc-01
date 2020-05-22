@@ -4,7 +4,7 @@ import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem, MDBIcon, MDBBtn } from "mdbreact";
 
 import "../style/header.css";
-import logoSmall from '../images/logos/Austex logo_web.png';
+import logoSmall from '../images/logos/logo-small.png';
 
 class Header extends Component {
     // state = {

@@ -5,7 +5,7 @@ import ScrollToTop from 'react-scroll-up'
 import Header from './header'
 import Footer from './footer'
 import '../style/layout.css'
-import logoUp from '../images/logos/logo-up-small.png'
+import logoUp from '../images/logos/austex-logo_web-small.png'
 
 const Layout = ({ children }) => (
   <div className={'content'}>
@@ -13,7 +13,7 @@ const Layout = ({ children }) => (
     {children}
     <ScrollToTop showUnder={160} style={{ zIndex: '1' }}>
       <span style={{ textAlign: 'center' }}>
-        <img src={logoUp} style={{ height: '55px', width: '70px' }} />
+        <img src={logoUp} style={{ height: '66px', width: '70px' }} />  {/* height 55 */}
         <br />
         <p>TOP</p>
       </span>

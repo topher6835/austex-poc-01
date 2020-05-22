@@ -15,13 +15,13 @@ const Feature = (props) => {
               className="d-none d-md-block feature-banner-bar-desktop"
               md="7"
             >
-              <div className="feature-bar-img z-depth-1-half">
+              {/* <div className="feature-bar-img z-depth-1-half">
                 <img
                   src={props.icon}
                   alt=""
                   className="img-fluid rounded-circle feature-image"
                 />
-              </div>
+              </div> */}
               <div className="feature-bar-title">
                 <h2 className="responsive-banner-bar-title-text-desktop">{props.title}</h2>
               </div>
@@ -48,7 +48,7 @@ const Feature = (props) => {
             </MDBCol>
 
             <MDBCol className="d-none d-md-block" md="8">
-              <MDBRow className="mb-3 ">
+              <MDBRow className="mb-3">
                 <MDBCol className="" xl="10" md="11" size="10">
                   <div className="content-description">
                     {props.textBlock}
