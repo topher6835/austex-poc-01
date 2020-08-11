@@ -10,7 +10,7 @@ const PromoItem = (props) => {
     return (
       <div className="promo-item">  {/* promo-item feature */}
 
-        <MDBRow className="">
+        {/* <MDBRow className="">
             <MDBCol size="12">
                 <MDBRow className="banner-row">
                     <MDBCol className="d-none d-md-block" md="12">
@@ -18,10 +18,10 @@ const PromoItem = (props) => {
                         <div className="specials-page-headline-bar">
                             <MDBRow>
                                 <MDBCol md="10">
-                                <h2 className="promo-headline ">Promotional Item of the Month!</h2>  {/* promo-headline responsive-title-bar-text*/}
+                                <h2 className="promo-headline ">Promotional Item of the Month!</h2>
                                 </MDBCol>
                                 <MDBCol md="2">
-                                <h2 className="">Month</h2> {/* promo-headline-month responsive-title-bar-text*/}
+                                <h2 className="">Month</h2>
                                 </MDBCol>
                             </MDBRow>
                         </div>
@@ -32,7 +32,7 @@ const PromoItem = (props) => {
                     </MDBCol>
                 </MDBRow>
             </MDBCol>
-        </MDBRow>
+        </MDBRow> */}
 
         <MDBRow className="promo-content-row">
           <MDBCol className="promo-img-col" md="4"> {/* 3 */}

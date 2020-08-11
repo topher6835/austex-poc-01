@@ -1,15 +1,21 @@
-import React from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn } from 'mdbreact';
+import React from 'react'
+import { MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn } from 'mdbreact'
 
-import Layout from '../components/layout';
-import "../style/submitFile.css";
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import TitleBar from '../components/titleBar'
+import "../style/submitFile.css"
 
 const SubmitFile = () => {
   return (
     <Layout>
+        <SEO title="Submit A File" />
+        <div style={{marginTop: "100px"}}>
+            <TitleBar title={"Submit A File"} />
+        </div>
         <MDBContainer>
             <MDBRow className="my-5 justify-content-center file-transfer-main-row">
-                <MDBCol lg="5">
+                <MDBCol lg="5" className="content-description">
                     <MDBRow>
                         <h4><MDBIcon icon="lock" /> Private FTP Accounts</h4>
                         <p>Aus-Tex is pleased to establish safe and secure FTP accounts for our customers.</p>
@@ -40,17 +46,21 @@ const SubmitFile = () => {
                         <p>For example: “Marie_CityofAustin_Booket.sit”</p>
                     </MDBRow>
                 </MDBCol>
-                <MDBCol lg="7">
+                <MDBCol lg="7" className="content-description">
                     <MDBRow className="justify-content-center">
                         <span ><h4 style={{fontSize: '2rem', marginBottom: '0'}}><MDBIcon icon="file-upload" />  File Upload</h4></span>
                     </MDBRow>
+                    <MDBRow className="justify-content-center">
+                        <MDBCol md="12" className="send-file-col form-descrip" >
+                            <p>Please use the form below to send us a file. If you have large or multiple files, please compress them using WinZip, 7Zip, or WinRar before uploading.</p>
+                            <p>If you have any issues uploading, or if your file is over 50MB in size, please contact our Imaging Director at <a href="tel:+1-512-476-7581">(512) 476-7581</a> to get instructions for sending through our FTP instead.</p>
+                        </MDBCol>
+                    </MDBRow>
+
                     <MDBRow className="justify-content-center" >
                         <MDBCol md="12" className="send-file-col">
                             <div className="send-file-div">
-                                <form name="file-submit" method="POST">
-                                {/* <form name="file-submit" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-                                    <input type="hidden" name="bot-field" />
-                                    <input type="hidden" name="form-name" value="file-submit" /> */}
+                                <form className="send-file-form" name="file-submit" method="POST">
                                     <MDBRow>
                                         <MDBCol md="6">
                                             <label htmlFor="yourName" className="">
@@ -160,10 +170,10 @@ const SubmitFile = () => {
                                                     <span className="frm_required"> *</span>
                                                 </label>
                                                 <MDBRow>
-                                                    <MDBCol md="3">
+                                                    <MDBCol style={{maxWidth: "180px"}}>
                                                         <input type="radio" id="receiveNewsYes" name="receiveNews" value="Yes" label="Yes, please!" checked /> <label for="receiveNewsYes">Yes, please!</label>
                                                     </MDBCol>
-                                                    <MDBCol md="3">
+                                                    <MDBCol md="3" >
                                                         <input type="radio" id="receiveNewsNo" name="receiveNews" value="No" /> <label for="receiveNewsNo">No thanks.</label>
                                                     </MDBCol>
                                                 </MDBRow>

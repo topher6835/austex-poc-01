@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { MDBContainer, MDBRow, MDBCol, MDBFormInline, MDBInput, MDBBtn, MDBIcon } from 'mdbreact';
 
 import Layout from '../components/layout';
+import SEO from '../components/seo';
+import TitleBar from '../components/titleBar';
 import "../style/requestQuote.css";
 
 class CustomQuote extends Component {
@@ -36,9 +38,13 @@ class CustomQuote extends Component {
   render() {
     return (
       <Layout>
-        <MDBContainer >
+        <SEO title="Request A Quote" />
+        <div style={{marginTop: "100px"}}>
+            <TitleBar title={"Request A Quote"} />
+        </div>
+        <MDBContainer>
           <MDBRow><h1 className="request-quote-title">Request a Custom Quote</h1></MDBRow>
-          <MDBRow className="request-quote-main-row">
+          <MDBRow className="request-quote-main-row content-description">
             <form name="get-quote" method="POST">
             {/* <form name="get-quote" method="POST" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="bot-field" />

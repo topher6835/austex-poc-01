@@ -9,6 +9,7 @@ const IMAGES = [
   {
     src: 'https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg',
     thumbnail:
+      // 'https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg',
       'https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_n.jpg',
     thumbnailWidth: 320,
     thumbnailHeight: 212,
@@ -86,8 +87,7 @@ const IMAGES = [
 const GridGallery = () => {
   return (
     <MDBContainer>
-      <h3>Gallery</h3>
-      <MDBRow>
+      <MDBRow >
         <MDBCol md="12">
           <Gallery images={IMAGES} enableImageSelection={false} />
         </MDBCol>

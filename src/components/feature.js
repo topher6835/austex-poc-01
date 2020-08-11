@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBRow, MDBCol } from 'mdbreact';
 
-import "../style/feature.css";
+import TitleBar from './titleBar';
 
 const Feature = (props) => {
 
@@ -10,32 +10,7 @@ const Feature = (props) => {
       <MDBRow className="my-5 feature-row" id={props.id}>
         <MDBCol size="12">
 
-          <MDBRow className="banner-row">
-            <MDBCol
-              className="d-none d-md-block feature-banner-bar-desktop"
-              md="7"
-            >
-              {/* <div className="feature-bar-img z-depth-1-half">
-                <img
-                  src={props.icon}
-                  alt=""
-                  className="img-fluid rounded-circle feature-image"
-                />
-              </div> */}
-              <div className="feature-bar-title">
-                <h2 className="responsive-banner-bar-title-text-desktop">{props.title}</h2>
-              </div>
-            </MDBCol>
-
-            <MDBCol
-              className="d-block d-md-none banner-bar-mobile"
-              md="5"
-            >
-              <h3 className="responsive-banner-bar-title-text-mobile">
-                {props.title}
-              </h3>
-            </MDBCol>
-          </MDBRow>
+          <TitleBar title={props.title} />
 
           <MDBRow className="feature-content" style={{ marginTop: '35px' }}>
             <MDBCol className="d-none d-md-block" md="4">

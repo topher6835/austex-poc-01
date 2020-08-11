@@ -15,9 +15,18 @@
     margin-top: 20px;
     border: 2px solid #1f3f7c;
 }
+.form-descrip {
+    padding-top: 15px;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .send-file-div {
     padding: 50px 0;
     color: #ffffff;
+}
+.send-file-form {
+    margin-top: 0;
 }
 .send-file-text {
     color: #ffffff !important;

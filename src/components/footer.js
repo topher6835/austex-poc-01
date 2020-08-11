@@ -15,12 +15,17 @@ const Footer = () => {
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
-                            <a href="mailto:email0@email.com">austex@austex.com</a>
+                            <a href="mailto:austex@austex.com">austex@austex.com</a>
                         </h6>
                     </MDBCol>
                     <MDBCol md="2" className="b-3">
                         <h6 className="title font-weight-bold">
                             <Link to="/directions">Directions</Link>
+                        </h6>
+                    </MDBCol>
+                    <MDBCol md="2" className="b-3">
+                        <h6 className="title font-weight-bold">
+                            <a href="https://austex.logomall.com/">Catalog</a>
                         </h6>
                     </MDBCol>
                     <MDBCol md="2" className="b-3">

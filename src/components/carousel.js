@@ -5,7 +5,6 @@ import "../style/carousel.css";
 import CarouselSlide from "./carouselSlide";
 
 //
-const tempText = "LOREM Lorem Lorem Lorem Lorem Lorem ipsum dolor sit amet.";
 import tempImage from "../images/carousel/tempCarousel.png";
 
 import offSetPrintingImg from "../images/carousel/Offset_banner.png";
@@ -39,21 +38,19 @@ const wideFormatText = "";
 const wideFormatLink = "/#feature6";
 //
 //import designMarketingImg from "";
-const designMarketingBanner = "Graphic Design & Online Marketing";
+const designMarketingBanner = "Pre-Press & Graphic Design";
 const designMarketingText = "";
 const designMarketingLink = "/#feature7";
 
 const CarouselPage = () => (
   <Carousel autoPlay showThumbs={false} infiniteLoop={true} interval={5000} showStatus={false} swipeScrollTolerance={1} emulateTouch={true}>
-
-    <CarouselSlide slideImage={offSetPrintingImg} banner={offSetPrintingBanner} text={tempText} link={offsetPrintingLink} />
-    <CarouselSlide slideImage={digitalPrintingImg} banner={digitalPrintingBanner} text={tempText} link={digitalPrintingLink} />
-    <CarouselSlide slideImage={mailingImg} banner={mailingBanner} text={tempText} link={mailingLink} />
-    <CarouselSlide slideImage={embossingImg} banner={embossingBanner} text={tempText} link={embossingLink} />
-    <CarouselSlide slideImage={tempImage} banner={promoSpecialtyBanner} text={tempText} link={promoSpecialtyLink} />
-    <CarouselSlide slideImage={tempImage} banner={wideFormatBanner} text={tempText} link={wideFormatLink} />
-    <CarouselSlide slideImage={tempImage} banner={designMarketingBanner} text={tempText} link={designMarketingLink} />
-    
+    <CarouselSlide slideImage={offSetPrintingImg} banner={offSetPrintingBanner} link={offsetPrintingLink} />
+    <CarouselSlide slideImage={digitalPrintingImg} banner={digitalPrintingBanner} link={digitalPrintingLink} />
+    <CarouselSlide slideImage={mailingImg} banner={mailingBanner} link={mailingLink} />
+    <CarouselSlide slideImage={embossingImg} banner={embossingBanner} link={embossingLink} />
+    <CarouselSlide slideImage={tempImage} banner={promoSpecialtyBanner} link={promoSpecialtyLink} />
+    <CarouselSlide slideImage={tempImage} banner={wideFormatBanner} link={wideFormatLink} />
+    <CarouselSlide slideImage={tempImage} banner={designMarketingBanner} link={designMarketingLink} />
   </Carousel>
 );
 

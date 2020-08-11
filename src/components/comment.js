@@ -6,10 +6,14 @@ function createMarkup(textIn) {
 
 const Comment = props => {
   return (
-    <div className="left-comments">
+    <div>
       
         {(props.comment).map((item)=>{
-          return (<p dangerouslySetInnerHTML={createMarkup(item)} />)  
+          return (
+            <div className="left-comments">
+              <p dangerouslySetInnerHTML={createMarkup(item)} />
+            </div>
+          )  
         })}
       
     </div>

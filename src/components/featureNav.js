@@ -105,7 +105,7 @@ const FeaturesNav = () => {
                                     </div>
                                 </div>
                                 <div className="feature-nav-name p-2">
-                                    GRAPHIC DESIGN {'\&'} ONLINE MARKETING
+                                    PRE-PRESS {'\&'} GRAPHIC DESIGN
                                 </div>
                             </Link>
                         </MDBCol>

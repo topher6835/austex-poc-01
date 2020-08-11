@@ -11,8 +11,7 @@ commentsArray.push("Austex has helped us with our Year in Review Annual Reports 
 
 const Comments = props => {
   return (
-    <div className="left-comments">
-      <h3>Comments here.</h3>
+    <div >
       <Comment comment={commentsArray} />
     </div>
   )
