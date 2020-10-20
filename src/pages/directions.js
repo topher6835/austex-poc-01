@@ -15,7 +15,6 @@ const Directions = () => {
       <div style={{marginTop: "100px"}}>
           <TitleBar title={"Directions"} />
       </div>
-      {/* <h2 style={{ textAlign: 'center' }}>Directions Page</h2> */}
       <MDBRow className="my-5 directions-main-row" style={{ margin: '5px' }}>
         <MDBCol size="12">
           <MDBRow>

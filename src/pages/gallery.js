@@ -5,8 +5,8 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import GridGallery from '../components/gridGallery'
 import TitleBar from '../components/titleBar'
-import Comments from '../components/comments'
-import Equipment from '../components/equipmentList'
+//import Comments from '../components/comments'
+//import Equipment from '../components/equipmentList'
 //import GalleryImg from "../components/galleryImg";
 import '../style/gallery.css'
 

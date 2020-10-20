@@ -3,8 +3,6 @@ import React from 'react';
 import { MDBContainer, MDBRow, MDBCol } from 'mdbreact';
 import Gallery from 'react-grid-gallery';
 
-// import GalleryImg from "../components/galleryImg";
-
 const IMAGES = [
   {
     src: 'https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg',

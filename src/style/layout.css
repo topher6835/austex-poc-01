@@ -1,12 +1,6 @@
 
-/* .navbar.navbar-dark{
-  margin: 0;
-  background-image: linear-gradient(90deg, #3c0472, #5D00B7);
-} */
-
 html, body {
   height: 100% !important;
-  /* position: relative; */
 }
 .content {
   min-height: 100vh !important;
@@ -21,21 +15,17 @@ html, body {
   bottom: 0;
   width: 100%;
   background-image: linear-gradient(-90deg, #3c0472, #1F3F7C);
-   /* #3c0472, #5D00B7 */
 }
 #cardSection{
     background-color: rgba(221, 221, 221, 0.5);
     padding: 4rem 0;
 }
 
-
 /** BANNERS **/
 .banner-row {
-  /* margin-top: 15px; */
   color: #ffffff;
 }
 .feature-banner-bar-desktop {
-  /* background-color: rgb(31, 63, 124); */
   height: 55px;
   border-radius: 0 50px 50px 0;
   -webkit-border-radius: 0 50px 50px 0;
@@ -80,7 +70,6 @@ html, body {
 
 /** CONTENT **/
 .content-description {
-  /* height: 180px; */
   padding: 0px 30px;
   font-size: 1.4rem;
   display: table-cell;
@@ -113,17 +102,9 @@ html, body {
   -moz-border-radius: 100px;
 }
 .feature-nav-img {
-  /* margin-top: 16px;
-  display: inline-block;
-  overflow: hidden; */
 
   /* REQUIRED for SAFARI - zoom effect overflow was not hidden: */
   -webkit-mask-image: -webkit-radial-gradient(white, black);
-
-  /* width: 100px;
-  height: 100px; */
-  /* color: #1f3f7c;
-  text-decoration: none; */
 
   border-radius: 100px;
   -webkit-border-radius: 100px;
@@ -158,18 +139,17 @@ html, body {
 .feature-nav-name {
   color: #1f3f7c;
   line-height: 1.2;
-  font-size: 0.8rem; /* 0.6rem */
+  font-size: 0.8rem;
   font-weight: 500;
 }
 .feature-nav-tour {
   width: 175px;
-  height: 150px; /* 124 */
+  height: 150px;
   background-color: #1f3f7c;
   color: #ffffff;
   padding: 12px;
 }
 .feature-nav-tour img {
-  /* display: block; */
   max-width: 150px;
   max-height: 100px;
   width: auto;

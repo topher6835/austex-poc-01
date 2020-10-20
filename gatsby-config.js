@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'AusTex Demo',
-    description: 'AusTex Demo with MDB React',
+    title: 'AusTex',
+    description: 'AusTex Printing, Mailing, Promotional Products, Creative Campaigns, Marketing Strategy',
     siteUrl: 'https://gatsby-starter.mdbootstrap.com',
     author: 'topherdev',
   },

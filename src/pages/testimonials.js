@@ -28,14 +28,6 @@ const Testimonials = () => {
                 <MDBCol md="1"></MDBCol>
               </MDBRow>
 
-              {/* <MDBRow>
-                <MDBCol md="1"></MDBCol>
-                <MDBCol md="10">
-                  <p>text</p>
-                </MDBCol>
-                <MDBCol md="1"></MDBCol>
-              </MDBRow> */}
-
             </MDBCol>
           </MDBRow>
       </Layout>

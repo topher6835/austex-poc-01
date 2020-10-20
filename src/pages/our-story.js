@@ -8,7 +8,7 @@ import TitleBar from '../components/titleBar';
 const OurStory = () => {
   return (
       <Layout>
-          <SEO title="Testimonials" />
+          <SEO title="Our Story" />
           <div style={{marginTop: "100px"}}>
             <TitleBar title={"72 Years of Quality"} />
           </div>
@@ -25,14 +25,6 @@ const OurStory = () => {
                 </MDBCol>
                 <MDBCol md="1"></MDBCol>
               </MDBRow>
-
-              {/* <MDBRow>
-                <MDBCol md="1"></MDBCol>
-                <MDBCol md="10">
-                  <p>text</p>
-                </MDBCol>
-                <MDBCol md="1"></MDBCol>
-              </MDBRow> */}
 
             </MDBCol>
           </MDBRow>

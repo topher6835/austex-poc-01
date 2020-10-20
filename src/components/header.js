@@ -7,13 +7,6 @@ import "../style/header.css";
 import logoSmall from '../images/logos/logo-small.png';
 
 class Header extends Component {
-    // state = {
-    //     isOpen: false
-    // };
-      
-    // toggleCollapse = () => {
-    //     this.setState({ isOpen: !this.state.isOpen });
-    // }
 
     render() {
         return (
@@ -102,10 +95,9 @@ class Header extends Component {
                                     <span className="mr-2 black-text" style={{marginRight: '0'}}>Menu</span> <MDBIcon icon="bars"/>
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu className="mobile-dropdown-menu">
-                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Capabilties</MDBDropdownItem></Link>
-                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Equipment</MDBDropdownItem></Link>
+                                  <Link to="/our-story"><MDBDropdownItem className="white-text mobile-drop-item">Our Story</MDBDropdownItem></Link>
                                   <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Gallery</MDBDropdownItem></Link>
-                                  <Link to="/gallery"><MDBDropdownItem className="white-text mobile-drop-item">Customer Comments</MDBDropdownItem></Link>
+                                  <Link to="/testimonials"><MDBDropdownItem className="white-text mobile-drop-item">Customer Comments</MDBDropdownItem></Link>
                                   <Link to="/specials"><MDBDropdownItem className="white-text mobile-drop-item">Specials</MDBDropdownItem></Link>
                                   <Link to="/request-a-custom-quote">
                                     <MDBDropdownItem className="white-text mobile-drop-item">Get A Quote</MDBDropdownItem>

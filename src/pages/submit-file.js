@@ -101,7 +101,7 @@ const SubmitFile = () => {
                                                 <span className="frm_required"> *</span>
                                             </label>
                                             <select name="salesRep" id="salesRep" className="browser-default custom-select" required>
-                                                <option value="" selected="selected" className="">
+                                                <option value="" className="">
                                                 </option>
                                                 <option value="Becky Harper" className="">
                                                 Becky Harper</option>
@@ -171,10 +171,10 @@ const SubmitFile = () => {
                                                 </label>
                                                 <MDBRow>
                                                     <MDBCol style={{maxWidth: "180px"}}>
-                                                        <input type="radio" id="receiveNewsYes" name="receiveNews" value="Yes" label="Yes, please!" checked /> <label for="receiveNewsYes">Yes, please!</label>
+                                                        <input type="radio" id="receiveNewsYes" name="receiveNews" value="Yes" label="Yes, please!" defaultChecked /> <label htmlFor="receiveNewsYes">Yes, please!</label>
                                                     </MDBCol>
                                                     <MDBCol md="3" >
-                                                        <input type="radio" id="receiveNewsNo" name="receiveNews" value="No" /> <label for="receiveNewsNo">No thanks.</label>
+                                                        <input type="radio" id="receiveNewsNo" name="receiveNews" value="No" /> <label htmlFor="receiveNewsNo">No thanks.</label>
                                                     </MDBCol>
                                                 </MDBRow>
                                             </MDBCol>
