@@ -141,7 +141,7 @@ const fillerText = (
 
 const FeaturesSection = () => {
   return (
-    <div>
+    <div> {/* style={{marginBottom: "6rem"}} */}
       <Feature 
         icon={offsetPrintingIcon} title={offsetPrintingTitle} leftImage={offsetPrintingIcon}
         textBlock={offsetPrintingText} id={"feature1"}

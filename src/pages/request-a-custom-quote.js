@@ -47,12 +47,12 @@ class CustomQuote extends Component {
           <MDBRow>
             <h1 className="request-quote-title">Request a Custom Quote</h1>
           </MDBRow>
-          <MDBRow className="request-quote-main-row content-description">
-            <form name="get-quote" method="POST">
+          <MDBRow className="request-quote-main-row"> {/* content-description */}
+            <form name="get-quote" method="POST" className="content-description">
               {/* <form name="get-quote" method="POST" netlify-honeypot="bot-field" data-netlify="true">
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="get-quote" /> */}
-              <div className="quote-form-basic-info-section">
+              <div className="quote-form-basic-info-section ">
                 <MDBRow>
                   <MDBCol md="4">
                     <label htmlFor="firstName" className="">

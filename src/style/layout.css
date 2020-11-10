@@ -8,7 +8,7 @@ html, body {
   display: block;
   
   position: relative;
-  padding-bottom: 220px;
+  padding-bottom: 265px; /* 220 */
 }
 .page-footer {
   position:absolute;
@@ -160,6 +160,10 @@ html, body {
 /* Feature Section */
 .feature-row {
   margin-right: 0px;
+  /* margin-top: 0 !important;  override default */
+}
+.feature-row, .my-5 {
+  /* margin-top: 0 !important;  override default */
 }
 /* REMOVED image from feature bar
 .feature-bar-img {

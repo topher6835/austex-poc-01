@@ -5,7 +5,7 @@ import "../style/carousel.css";
 import CarouselSlide from "./carouselSlide";
 
 //
-import tempImage from "../images/carousel/tempCarousel.png";
+//import tempImage from "../images/carousel/tempCarousel.png";
 
 import offSetPrintingImg from "../images/carousel/Offset_banner.png";
 const offSetPrintingBanner = "Superb Offset Printing";
@@ -26,18 +26,19 @@ import embossingImg from "../images/carousel/embossing_banner.jpg";
 const embossingBanner = "Embossing, Foiling & Die Cutting";
 const embossingText = "";
 const embossingLink = "/#feature4";
+
 //
-//import promoSpecialtyImg from "";
+import promoSpecialtyImg from "../images/carousel/specialty.png";
 const promoSpecialtyBanner = "Promotional & Specialty Items";
 const promoSpecialtyText = "";
 const promoSpecialtyLink = "/#feature5";
 //
-//import wideFormatImg from "";
+import wideFormatImg from "../images/carousel/wideformat.png";
 const wideFormatBanner = "Wide Format";
 const wideFormatText = "";
 const wideFormatLink = "/#feature6";
 //
-//import designMarketingImg from "";
+import designMarketingImg from "../images/carousel/prepress.png";
 const designMarketingBanner = "Pre-Press & Graphic Design";
 const designMarketingText = "";
 const designMarketingLink = "/#feature7";
@@ -48,9 +49,9 @@ const CarouselPage = () => (
     <CarouselSlide slideImage={digitalPrintingImg} banner={digitalPrintingBanner} link={digitalPrintingLink} />
     <CarouselSlide slideImage={mailingImg} banner={mailingBanner} link={mailingLink} />
     <CarouselSlide slideImage={embossingImg} banner={embossingBanner} link={embossingLink} />
-    <CarouselSlide slideImage={tempImage} banner={promoSpecialtyBanner} link={promoSpecialtyLink} />
-    <CarouselSlide slideImage={tempImage} banner={wideFormatBanner} link={wideFormatLink} />
-    <CarouselSlide slideImage={tempImage} banner={designMarketingBanner} link={designMarketingLink} />
+    <CarouselSlide slideImage={promoSpecialtyImg} banner={promoSpecialtyBanner} link={promoSpecialtyLink} />
+    <CarouselSlide slideImage={wideFormatImg} banner={wideFormatBanner} link={wideFormatLink} />
+    <CarouselSlide slideImage={designMarketingImg} banner={designMarketingBanner} link={designMarketingLink} />
   </Carousel>
 );
 

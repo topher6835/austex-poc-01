@@ -7,7 +7,7 @@ const Feature = (props) => {
 
   return (
     <div className="feature">
-      <MDBRow className="my-5 feature-row" id={props.id}>
+      <MDBRow className="my-5 feature-row" id={props.id}> {/* my-5 */}
         <MDBCol size="12">
 
           <TitleBar title={props.title} />

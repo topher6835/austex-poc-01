@@ -117,12 +117,26 @@ header {
 /* */
 
 /* Responsive header */
-@media only screen and (min-width: 916px) {
+@media only screen and (min-width: 916px) {    /* 916px needed to fit header content. 768px is mobile switch. */
   .mobile-header {
     display: none;
   }
+  #quick-tour-list-display {
+    display: none;
+  }
 }
-@media only screen and (max-width: 915px) {
+@media only screen and (max-width: 916px) and (min-width: 768px) {
+  .mobile-header {
+    display: none;
+  }
+  #header-under-roof-text {
+    display: none;
+  }
+  #quick-tour-button-display {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
   .desktop-header {
     display: none;
   }
@@ -151,4 +165,8 @@ header {
   .mobile-nav-item {
     margin-right: -20px;
   }
+}
+
+.mobile-phone {
+  width: 115px;
 }
